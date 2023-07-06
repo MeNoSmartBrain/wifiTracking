@@ -1,6 +1,10 @@
 # Ignore env.py to prevent accidentally publishing credentials
 env.py
 
+# Ignored for privacy reasons
+wifiData_yh.csv
+images/PNL** 
+maps/demoMaps/map_yh.html
 # ----------- !! DISCLAIMER !! -----------
 # The rest of this file is the standard .gitignore for Jupyter notebooks available at https://github.com/jupyter/notebook/blob/main/.gitignore
 # Therefore it is not part of the intellectual added value of the author of this repository.
