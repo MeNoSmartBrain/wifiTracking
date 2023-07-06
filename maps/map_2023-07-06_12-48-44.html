@@ -1,0 +1,2822 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_625e32ed2e31d4f336ab6a24181ce915 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+     <div style="position: fixed; 
+                 top: 50px; right: 50px; width: 200px; height: 120px; 
+                 border:2px solid grey; z-index:9999; font-size:14px;
+                 background-color:white;">
+         &nbsp; <b> Legend </b> <br>
+&nbsp; <i class="fa fa-circle fa-1x" style="color:#1f78b4"></i> d2:1a:c0:3b:39:ed<br>&nbsp; <i class="fa fa-circle fa-1x" style="color:#e31a1c"></i> 9a:7b:60:85:e8:60<br>
+     </div>
+    
+            <div class="folium-map" id="map_625e32ed2e31d4f336ab6a24181ce915" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_625e32ed2e31d4f336ab6a24181ce915 = L.map(
+                "map_625e32ed2e31d4f336ab6a24181ce915",
+                {
+                    center: [51.165691, 10.451526],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9668cfdf657ec811512a752eaaf09cb7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_625e32ed2e31d4f336ab6a24181ce915);
+        
+    
+            var marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477 = L.markerClusterGroup(
+                {"disableClusteringAtZoom": 0}
+            );
+            map_625e32ed2e31d4f336ab6a24181ce915.addLayer(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+            var circle_marker_7e9d9bf24bc875f731efe34d05f08627 = L.circleMarker(
+                [49.23725128, 6.99460316],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_fd6b427ca8217552aadfd5ee76acd361 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11d6928851e5f655a2bcb91d820852aa = $(`<div id="html_11d6928851e5f655a2bcb91d820852aa" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:01:E3:08:9C:B6 <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_fd6b427ca8217552aadfd5ee76acd361.setContent(html_11d6928851e5f655a2bcb91d820852aa);
+            
+        
+
+        circle_marker_7e9d9bf24bc875f731efe34d05f08627.bindPopup(popup_fd6b427ca8217552aadfd5ee76acd361)
+        ;
+
+        
+    
+    
+            var circle_marker_b18406d8893a33bda2b0195bc79d3268 = L.circleMarker(
+                [53.54656601, 9.97614002],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_5cbe1efe3e73d5665e98538f95007ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd757125a0aa0e377dce6b9b6bbbbdb5 = $(`<div id="html_dd757125a0aa0e377dce6b9b6bbbbdb5" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:03:C9:6A:6F:15 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 0 <br> </li>                 </ul>                 </div>`)[0];
+                popup_5cbe1efe3e73d5665e98538f95007ae5.setContent(html_dd757125a0aa0e377dce6b9b6bbbbdb5);
+            
+        
+
+        circle_marker_b18406d8893a33bda2b0195bc79d3268.bindPopup(popup_5cbe1efe3e73d5665e98538f95007ae5)
+        ;
+
+        
+    
+    
+            var circle_marker_03217c7e73c136887fe97d56836e1ce0 = L.circleMarker(
+                [51.03116226, 13.73309898],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_6bae87f8256646bc30a5d87e7e9adbed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cda38c1dff88e643489423e66f3c62eb = $(`<div id="html_cda38c1dff88e643489423e66f3c62eb" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:04:0E:72:6B:2C <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 13 <br> </li>                 </ul>                 </div>`)[0];
+                popup_6bae87f8256646bc30a5d87e7e9adbed.setContent(html_cda38c1dff88e643489423e66f3c62eb);
+            
+        
+
+        circle_marker_03217c7e73c136887fe97d56836e1ce0.bindPopup(popup_6bae87f8256646bc30a5d87e7e9adbed)
+        ;
+
+        
+    
+    
+            var circle_marker_fbf7463f9ed20abe14fbf5f709b70582 = L.circleMarker(
+                [52.40044403, 13.26971912],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_97a0468260603e891103511d8273c06d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97edb8fc9c587942422f1dfcb220bfaa = $(`<div id="html_97edb8fc9c587942422f1dfcb220bfaa" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:04:0E:8E:B7:B7 <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_97a0468260603e891103511d8273c06d.setContent(html_97edb8fc9c587942422f1dfcb220bfaa);
+            
+        
+
+        circle_marker_fbf7463f9ed20abe14fbf5f709b70582.bindPopup(popup_97a0468260603e891103511d8273c06d)
+        ;
+
+        
+    
+    
+            var circle_marker_2b34f5796945c6b7830699fd06590bed = L.circleMarker(
+                [51.91276932, 10.42919064],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_527fa8efad61568a0bff3d2e1edc55d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e02ebfb6bf76d86f07f488400aafc64 = $(`<div id="html_9e02ebfb6bf76d86f07f488400aafc64" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:04:0E:8F:CC:55 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_527fa8efad61568a0bff3d2e1edc55d0.setContent(html_9e02ebfb6bf76d86f07f488400aafc64);
+            
+        
+
+        circle_marker_2b34f5796945c6b7830699fd06590bed.bindPopup(popup_527fa8efad61568a0bff3d2e1edc55d0)
+        ;
+
+        
+    
+    
+            var circle_marker_7754fda569e3d55dd4edb8f0db2b6525 = L.circleMarker(
+                [53.553936, 9.93284702],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_e04bb7921720bda6be167ecebccb115c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e77dc060bac5bc0f2bca5b5d50514656 = $(`<div id="html_e77dc060bac5bc0f2bca5b5d50514656" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:04:E2:98:B0:60 <br> </li>                     <li>Encryption: none <br> </li>                     <li>Channel: 8 <br> </li>                 </ul>                 </div>`)[0];
+                popup_e04bb7921720bda6be167ecebccb115c.setContent(html_e77dc060bac5bc0f2bca5b5d50514656);
+            
+        
+
+        circle_marker_7754fda569e3d55dd4edb8f0db2b6525.bindPopup(popup_e04bb7921720bda6be167ecebccb115c)
+        ;
+
+        
+    
+    
+            var circle_marker_9b07e920094d049c6874f958434a8bd8 = L.circleMarker(
+                [51.01646423, 7.81025457],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_277123b2b9ce59e88f175542f066e709 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a02fd600f350209a036a5fad5025156c = $(`<div id="html_a02fd600f350209a036a5fad5025156c" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:0B:3B:CB:C3:16 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 8 <br> </li>                 </ul>                 </div>`)[0];
+                popup_277123b2b9ce59e88f175542f066e709.setContent(html_a02fd600f350209a036a5fad5025156c);
+            
+        
+
+        circle_marker_9b07e920094d049c6874f958434a8bd8.bindPopup(popup_277123b2b9ce59e88f175542f066e709)
+        ;
+
+        
+    
+    
+            var circle_marker_5401db22430ca77a7e5091c6917887a7 = L.circleMarker(
+                [51.24328995, 6.82426977],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_e87167d408cbb811d7300858de0156b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b1a221bbbacf57a55c2292072f4e451 = $(`<div id="html_3b1a221bbbacf57a55c2292072f4e451" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:0F:B5:63:7E:EA <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_e87167d408cbb811d7300858de0156b0.setContent(html_3b1a221bbbacf57a55c2292072f4e451);
+            
+        
+
+        circle_marker_5401db22430ca77a7e5091c6917887a7.bindPopup(popup_e87167d408cbb811d7300858de0156b0)
+        ;
+
+        
+    
+    
+            var circle_marker_1d9ec111c7a32964ff33abded3134e64 = L.circleMarker(
+                [53.61333847, 10.0513401],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_2c9df892f8f4f87ef2021bd2f55f0c78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a01fd53076135c8a838f066b2e4accd7 = $(`<div id="html_a01fd53076135c8a838f066b2e4accd7" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:11:6B:18:7D:8E <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_2c9df892f8f4f87ef2021bd2f55f0c78.setContent(html_a01fd53076135c8a838f066b2e4accd7);
+            
+        
+
+        circle_marker_1d9ec111c7a32964ff33abded3134e64.bindPopup(popup_2c9df892f8f4f87ef2021bd2f55f0c78)
+        ;
+
+        
+    
+    
+            var circle_marker_d68c68c6465658a5504ce61ec130a210 = L.circleMarker(
+                [50.83178711, 12.89025497],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_8cd6245d892d1fc3261cd04a58ebff2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8abe4e2774c5b64713f6235e912a257 = $(`<div id="html_b8abe4e2774c5b64713f6235e912a257" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:11:F5:66:B7:74 <br> </li>                     <li>Encryption: none <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_8cd6245d892d1fc3261cd04a58ebff2a.setContent(html_b8abe4e2774c5b64713f6235e912a257);
+            
+        
+
+        circle_marker_d68c68c6465658a5504ce61ec130a210.bindPopup(popup_8cd6245d892d1fc3261cd04a58ebff2a)
+        ;
+
+        
+    
+    
+            var circle_marker_6702fcb7585da1607ef8b84f11416c1f = L.circleMarker(
+                [49.40879059, 8.70371628],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_a56f5cc67f9b7a457ee48e9692983361 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_904651daa0a2d3d2e29c32b8be1d2c69 = $(`<div id="html_904651daa0a2d3d2e29c32b8be1d2c69" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:12:BF:E0:D5:EA <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_a56f5cc67f9b7a457ee48e9692983361.setContent(html_904651daa0a2d3d2e29c32b8be1d2c69);
+            
+        
+
+        circle_marker_6702fcb7585da1607ef8b84f11416c1f.bindPopup(popup_a56f5cc67f9b7a457ee48e9692983361)
+        ;
+
+        
+    
+    
+            var circle_marker_7dc1c449d237cd260b8c36d82714d6ba = L.circleMarker(
+                [48.15065384, 11.56615829],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_5c489c0a625dcded143ec4bc408bd574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1167f36d0354c3546cadaa66acae8de5 = $(`<div id="html_1167f36d0354c3546cadaa66acae8de5" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:13:F7:72:A7:99 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_5c489c0a625dcded143ec4bc408bd574.setContent(html_1167f36d0354c3546cadaa66acae8de5);
+            
+        
+
+        circle_marker_7dc1c449d237cd260b8c36d82714d6ba.bindPopup(popup_5c489c0a625dcded143ec4bc408bd574)
+        ;
+
+        
+    
+    
+            var circle_marker_d6296df3a061d9328055e8d630bfbcdc = L.circleMarker(
+                [52.54150391, 13.43908882],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_ce579fae30e2dc834c8a41eb796dd5a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fed59bc4bb00dd1c73916bbb560c782 = $(`<div id="html_8fed59bc4bb00dd1c73916bbb560c782" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:14:6C:21:22:CA <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 13 <br> </li>                 </ul>                 </div>`)[0];
+                popup_ce579fae30e2dc834c8a41eb796dd5a3.setContent(html_8fed59bc4bb00dd1c73916bbb560c782);
+            
+        
+
+        circle_marker_d6296df3a061d9328055e8d630bfbcdc.bindPopup(popup_ce579fae30e2dc834c8a41eb796dd5a3)
+        ;
+
+        
+    
+    
+            var circle_marker_ca0f0da7a3f35e90a2768531e9d25461 = L.circleMarker(
+                [51.26881027, 14.10490036],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_4f1132e21ba8abab7af3035fda0f802a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_423e0b48df5ffdcd2f656146a8c57b28 = $(`<div id="html_423e0b48df5ffdcd2f656146a8c57b28" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:15:0C:92:FE:7A <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_4f1132e21ba8abab7af3035fda0f802a.setContent(html_423e0b48df5ffdcd2f656146a8c57b28);
+            
+        
+
+        circle_marker_ca0f0da7a3f35e90a2768531e9d25461.bindPopup(popup_4f1132e21ba8abab7af3035fda0f802a)
+        ;
+
+        
+    
+    
+            var circle_marker_88c84f6b4dd4a3aaeeca01e50268a72d = L.circleMarker(
+                [49.49524689, 8.48594284],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_b61662feb331cbc26190a873b3eb4949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d5f1db6f3762aa4e4e8b55098870d20 = $(`<div id="html_7d5f1db6f3762aa4e4e8b55098870d20" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:16:38:48:B7:B1 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_b61662feb331cbc26190a873b3eb4949.setContent(html_7d5f1db6f3762aa4e4e8b55098870d20);
+            
+        
+
+        circle_marker_88c84f6b4dd4a3aaeeca01e50268a72d.bindPopup(popup_b61662feb331cbc26190a873b3eb4949)
+        ;
+
+        
+    
+    
+            var circle_marker_8193ca77ce1900b2c261388b7a3f9a9f = L.circleMarker(
+                [53.61600876, 7.16273832],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_d0d4ae3196d8cc95059847e6dca9f481 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_993551a59542bc194d4ea3970aa0b6fd = $(`<div id="html_993551a59542bc194d4ea3970aa0b6fd" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:16:B6:E7:D8:12 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 5 <br> </li>                 </ul>                 </div>`)[0];
+                popup_d0d4ae3196d8cc95059847e6dca9f481.setContent(html_993551a59542bc194d4ea3970aa0b6fd);
+            
+        
+
+        circle_marker_8193ca77ce1900b2c261388b7a3f9a9f.bindPopup(popup_d0d4ae3196d8cc95059847e6dca9f481)
+        ;
+
+        
+    
+    
+            var circle_marker_b2fdcf0c6995874158a451094db2fdd7 = L.circleMarker(
+                [51.26078796, 7.13892937],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_37ac74cd756512f6d4eb916de9d6a0f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bbfda8380c1e296533264acd969b5c1 = $(`<div id="html_9bbfda8380c1e296533264acd969b5c1" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:18:E7:20:F7:A5 <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_37ac74cd756512f6d4eb916de9d6a0f6.setContent(html_9bbfda8380c1e296533264acd969b5c1);
+            
+        
+
+        circle_marker_b2fdcf0c6995874158a451094db2fdd7.bindPopup(popup_37ac74cd756512f6d4eb916de9d6a0f6)
+        ;
+
+        
+    
+    
+            var circle_marker_09ea8ed7d990e0cb104b04bf78a172c9 = L.circleMarker(
+                [53.55334473, 9.9329834],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_7bdd1a7d28bd0dfddf7ec204de46c36e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a25e22fb298c10373bc42b1b7c978d0 = $(`<div id="html_6a25e22fb298c10373bc42b1b7c978d0" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:2A:00:25:FE <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 4 <br> </li>                 </ul>                 </div>`)[0];
+                popup_7bdd1a7d28bd0dfddf7ec204de46c36e.setContent(html_6a25e22fb298c10373bc42b1b7c978d0);
+            
+        
+
+        circle_marker_09ea8ed7d990e0cb104b04bf78a172c9.bindPopup(popup_7bdd1a7d28bd0dfddf7ec204de46c36e)
+        ;
+
+        
+    
+    
+            var circle_marker_7be324e1f71a3a7d6fb9d36479677bee = L.circleMarker(
+                [47.84775543, 12.01430798],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_d79db5f76f591cc2437bc578033cd992 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a314d6da05acac727363af9902fde0f = $(`<div id="html_3a314d6da05acac727363af9902fde0f" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1A:2A:06:6A:57 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 9 <br> </li>                 </ul>                 </div>`)[0];
+                popup_d79db5f76f591cc2437bc578033cd992.setContent(html_3a314d6da05acac727363af9902fde0f);
+            
+        
+
+        circle_marker_7be324e1f71a3a7d6fb9d36479677bee.bindPopup(popup_d79db5f76f591cc2437bc578033cd992)
+        ;
+
+        
+    
+    
+            var circle_marker_df4ac998b1fecf0d9b7e224b53244526 = L.circleMarker(
+                [50.96561432, 11.03197289],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_3ef7ac193e798d2a23969593a6130c1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3c0944153b1dab03961fd024637bd9c = $(`<div id="html_b3c0944153b1dab03961fd024637bd9c" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F5:BC <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 7 <br> </li>                 </ul>                 </div>`)[0];
+                popup_3ef7ac193e798d2a23969593a6130c1b.setContent(html_b3c0944153b1dab03961fd024637bd9c);
+            
+        
+
+        circle_marker_df4ac998b1fecf0d9b7e224b53244526.bindPopup(popup_3ef7ac193e798d2a23969593a6130c1b)
+        ;
+
+        
+    
+    
+            var circle_marker_a6f95ce889c04b6d566a0992ee21db46 = L.circleMarker(
+                [50.96536636, 11.03234577],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_809e910fc10333a4f7b0b377f73334a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2859f64a97adde82f974fe105f2d31af = $(`<div id="html_2859f64a97adde82f974fe105f2d31af" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F5:C4 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 44 <br> </li>                 </ul>                 </div>`)[0];
+                popup_809e910fc10333a4f7b0b377f73334a3.setContent(html_2859f64a97adde82f974fe105f2d31af);
+            
+        
+
+        circle_marker_a6f95ce889c04b6d566a0992ee21db46.bindPopup(popup_809e910fc10333a4f7b0b377f73334a3)
+        ;
+
+        
+    
+    
+            var circle_marker_abc0679388f563666edc36c4dcca98cf = L.circleMarker(
+                [50.96051025, 11.02876568],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_688509772bc29de825375e02c5ebd4d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0155353c18953957df0096ac32ae8775 = $(`<div id="html_0155353c18953957df0096ac32ae8775" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F5:CD <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_688509772bc29de825375e02c5ebd4d8.setContent(html_0155353c18953957df0096ac32ae8775);
+            
+        
+
+        circle_marker_abc0679388f563666edc36c4dcca98cf.bindPopup(popup_688509772bc29de825375e02c5ebd4d8)
+        ;
+
+        
+    
+    
+            var circle_marker_04e0f0192aff1f73fca07fdd963fe9df = L.circleMarker(
+                [50.87861633, 12.07979298],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_5606d54518e9dd3723726cb2e8c892d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3b13af4f2a212f2a1df50f41669924f = $(`<div id="html_e3b13af4f2a212f2a1df50f41669924f" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F5:DE <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_5606d54518e9dd3723726cb2e8c892d4.setContent(html_e3b13af4f2a212f2a1df50f41669924f);
+            
+        
+
+        circle_marker_04e0f0192aff1f73fca07fdd963fe9df.bindPopup(popup_5606d54518e9dd3723726cb2e8c892d4)
+        ;
+
+        
+    
+    
+            var circle_marker_4f631f8fb1812f0b7e9cea55e936ccd2 = L.circleMarker(
+                [50.87861633, 12.07979298],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_fd3c73609fa6f90c3ffa243adf949bd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40f158d3d58ac77515220a385601b603 = $(`<div id="html_40f158d3d58ac77515220a385601b603" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F5:E6 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 52 <br> </li>                 </ul>                 </div>`)[0];
+                popup_fd3c73609fa6f90c3ffa243adf949bd7.setContent(html_40f158d3d58ac77515220a385601b603);
+            
+        
+
+        circle_marker_4f631f8fb1812f0b7e9cea55e936ccd2.bindPopup(popup_fd3c73609fa6f90c3ffa243adf949bd7)
+        ;
+
+        
+    
+    
+            var circle_marker_1177e217c584bd9e2ef50bf603ea35ef = L.circleMarker(
+                [50.87675476, 12.07972908],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_61363f5ae1bb991efcfb3d8d2e7635e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fbd7bcb8b4152110bc8e8669cdbfd33 = $(`<div id="html_1fbd7bcb8b4152110bc8e8669cdbfd33" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F5:EF <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_61363f5ae1bb991efcfb3d8d2e7635e2.setContent(html_1fbd7bcb8b4152110bc8e8669cdbfd33);
+            
+        
+
+        circle_marker_1177e217c584bd9e2ef50bf603ea35ef.bindPopup(popup_61363f5ae1bb991efcfb3d8d2e7635e2)
+        ;
+
+        
+    
+    
+            var circle_marker_1dc1f618b9e6a9a2453860246777445c = L.circleMarker(
+                [50.87836456, 12.07809734],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_1ecfa637389ac674af89657833c3db80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4d0f461fa557da488f900e5d125c313 = $(`<div id="html_a4d0f461fa557da488f900e5d125c313" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F5:F7 <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 12 <br> </li>                 </ul>                 </div>`)[0];
+                popup_1ecfa637389ac674af89657833c3db80.setContent(html_a4d0f461fa557da488f900e5d125c313);
+            
+        
+
+        circle_marker_1dc1f618b9e6a9a2453860246777445c.bindPopup(popup_1ecfa637389ac674af89657833c3db80)
+        ;
+
+        
+    
+    
+            var circle_marker_d44fc866672dadf8bafaa2fca86a5ff5 = L.circleMarker(
+                [50.96551895, 11.03212357],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_7673f11d3318eba498383c14a3bf4bd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c68d0de1a17d163c290eb47f0361dadf = $(`<div id="html_c68d0de1a17d163c290eb47f0361dadf" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F6:11 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_7673f11d3318eba498383c14a3bf4bd0.setContent(html_c68d0de1a17d163c290eb47f0361dadf);
+            
+        
+
+        circle_marker_d44fc866672dadf8bafaa2fca86a5ff5.bindPopup(popup_7673f11d3318eba498383c14a3bf4bd0)
+        ;
+
+        
+    
+    
+            var circle_marker_5d5366d242863807ab0e6175ad4a6fb4 = L.circleMarker(
+                [50.96546936, 11.03222656],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_55b04e260549e137f3aa6916198aac98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93092589eaf8d872ad7ca4ffdbc1952f = $(`<div id="html_93092589eaf8d872ad7ca4ffdbc1952f" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:F6:19 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 100 <br> </li>                 </ul>                 </div>`)[0];
+                popup_55b04e260549e137f3aa6916198aac98.setContent(html_93092589eaf8d872ad7ca4ffdbc1952f);
+            
+        
+
+        circle_marker_5d5366d242863807ab0e6175ad4a6fb4.bindPopup(popup_55b04e260549e137f3aa6916198aac98)
+        ;
+
+        
+    
+    
+            var circle_marker_d5636bc189dce01eb38d1f6bb9405c50 = L.circleMarker(
+                [50.87829971, 12.0793047],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_4cadc578b0a327bfbc92fd5264e0869b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc4cb46667edfe556b926989ffeff12 = $(`<div id="html_dbc4cb46667edfe556b926989ffeff12" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FA:A6 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 7 <br> </li>                 </ul>                 </div>`)[0];
+                popup_4cadc578b0a327bfbc92fd5264e0869b.setContent(html_dbc4cb46667edfe556b926989ffeff12);
+            
+        
+
+        circle_marker_d5636bc189dce01eb38d1f6bb9405c50.bindPopup(popup_4cadc578b0a327bfbc92fd5264e0869b)
+        ;
+
+        
+    
+    
+            var circle_marker_3e13e5467d4f5f947c9d2d632e599925 = L.circleMarker(
+                [50.87861633, 12.07927704],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_fb6f426c8584e39d5765d24b16de9586 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dde20934f854696982d39c4d9611472a = $(`<div id="html_dde20934f854696982d39c4d9611472a" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FE:09 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_fb6f426c8584e39d5765d24b16de9586.setContent(html_dde20934f854696982d39c4d9611472a);
+            
+        
+
+        circle_marker_3e13e5467d4f5f947c9d2d632e599925.bindPopup(popup_fb6f426c8584e39d5765d24b16de9586)
+        ;
+
+        
+    
+    
+            var circle_marker_3bc79d522c165ef0eaf3496607e7566d = L.circleMarker(
+                [50.87861633, 12.07979298],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_bfae5d6e1380951c38396f031f604357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0698330cc776fd41ecffb54835a9352a = $(`<div id="html_0698330cc776fd41ecffb54835a9352a" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FE:11 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 36 <br> </li>                 </ul>                 </div>`)[0];
+                popup_bfae5d6e1380951c38396f031f604357.setContent(html_0698330cc776fd41ecffb54835a9352a);
+            
+        
+
+        circle_marker_3bc79d522c165ef0eaf3496607e7566d.bindPopup(popup_bfae5d6e1380951c38396f031f604357)
+        ;
+
+        
+    
+    
+            var circle_marker_d8076fde63f069b32641add1b5f1b56e = L.circleMarker(
+                [50.87844086, 12.07820034],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_c43f2b57ba458186270c14f16b900eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cd2e10b230f4c9130ee1552d1825770 = $(`<div id="html_7cd2e10b230f4c9130ee1552d1825770" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FE:55 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 12 <br> </li>                 </ul>                 </div>`)[0];
+                popup_c43f2b57ba458186270c14f16b900eb8.setContent(html_7cd2e10b230f4c9130ee1552d1825770);
+            
+        
+
+        circle_marker_d8076fde63f069b32641add1b5f1b56e.bindPopup(popup_c43f2b57ba458186270c14f16b900eb8)
+        ;
+
+        
+    
+    
+            var circle_marker_20a9e710e0d6cd1652179f4597dfa4ab = L.circleMarker(
+                [50.962883, 11.03132915],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_47a3b5760f0be436602fea52e10d6908 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7374de2d361ec9fd1176ddbac06a7d3 = $(`<div id="html_e7374de2d361ec9fd1176ddbac06a7d3" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FE:6F <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_47a3b5760f0be436602fea52e10d6908.setContent(html_e7374de2d361ec9fd1176ddbac06a7d3);
+            
+        
+
+        circle_marker_20a9e710e0d6cd1652179f4597dfa4ab.bindPopup(popup_47a3b5760f0be436602fea52e10d6908)
+        ;
+
+        
+    
+    
+            var circle_marker_ec4f083dfaca6ed7d1f42a2c3b523880 = L.circleMarker(
+                [50.96010208, 11.02849102],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_9bd72a70eed29b158a369e9d19f8acc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b8d3f5a95e7744c56ab5b0ac0b6af05 = $(`<div id="html_6b8d3f5a95e7744c56ab5b0ac0b6af05" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FE:D5 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 12 <br> </li>                 </ul>                 </div>`)[0];
+                popup_9bd72a70eed29b158a369e9d19f8acc2.setContent(html_6b8d3f5a95e7744c56ab5b0ac0b6af05);
+            
+        
+
+        circle_marker_ec4f083dfaca6ed7d1f42a2c3b523880.bindPopup(popup_9bd72a70eed29b158a369e9d19f8acc2)
+        ;
+
+        
+    
+    
+            var circle_marker_bfe769899043333abe41105015bf6b8c = L.circleMarker(
+                [50.9655838, 11.03185749],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_3b1c96e0dd40929a456ccce112193549 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26c1e9732663339710bf16a3015947d5 = $(`<div id="html_26c1e9732663339710bf16a3015947d5" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FF:2A <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_3b1c96e0dd40929a456ccce112193549.setContent(html_26c1e9732663339710bf16a3015947d5);
+            
+        
+
+        circle_marker_bfe769899043333abe41105015bf6b8c.bindPopup(popup_3b1c96e0dd40929a456ccce112193549)
+        ;
+
+        
+    
+    
+            var circle_marker_99189fe1b46ce8d58dd0b07093c12bec = L.circleMarker(
+                [50.96479797, 11.03307247],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_a08e830acb5fd15dd2239fb8739a47ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_456290c684b515975a4f23d4b9186867 = $(`<div id="html_456290c684b515975a4f23d4b9186867" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FF:5D <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_a08e830acb5fd15dd2239fb8739a47ed.setContent(html_456290c684b515975a4f23d4b9186867);
+            
+        
+
+        circle_marker_99189fe1b46ce8d58dd0b07093c12bec.bindPopup(popup_a08e830acb5fd15dd2239fb8739a47ed)
+        ;
+
+        
+    
+    
+            var circle_marker_39e87bf24d474945d17ae6620f2ee085 = L.circleMarker(
+                [50.96543121, 11.03217983],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_487c54e94573747410cd971109ad96f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d091d5827436a9fb3e5fd1d59e29ad11 = $(`<div id="html_d091d5827436a9fb3e5fd1d59e29ad11" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FF:6E <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 9 <br> </li>                 </ul>                 </div>`)[0];
+                popup_487c54e94573747410cd971109ad96f1.setContent(html_d091d5827436a9fb3e5fd1d59e29ad11);
+            
+        
+
+        circle_marker_39e87bf24d474945d17ae6620f2ee085.bindPopup(popup_487c54e94573747410cd971109ad96f1)
+        ;
+
+        
+    
+    
+            var circle_marker_c82a1da6f8bd8b9fab63e7fc22d53d10 = L.circleMarker(
+                [50.96524429, 11.03229046],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_c67d225f43e23ba70ac631dec1f9bcde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a6141c875cc646ab13cbeeba0da8248 = $(`<div id="html_5a6141c875cc646ab13cbeeba0da8248" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A1:FF:76 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 52 <br> </li>                 </ul>                 </div>`)[0];
+                popup_c67d225f43e23ba70ac631dec1f9bcde.setContent(html_5a6141c875cc646ab13cbeeba0da8248);
+            
+        
+
+        circle_marker_c82a1da6f8bd8b9fab63e7fc22d53d10.bindPopup(popup_c67d225f43e23ba70ac631dec1f9bcde)
+        ;
+
+        
+    
+    
+            var circle_marker_3069fb083f0daa4227ef9a2d02bd565c = L.circleMarker(
+                [50.87854004, 12.07891655],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_23ac57d2531ca639b8c35fadf6489464 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8382dd4588bdd6bdb3cc751c4bbc8704 = $(`<div id="html_8382dd4588bdd6bdb3cc751c4bbc8704" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A2:1D:61 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_23ac57d2531ca639b8c35fadf6489464.setContent(html_8382dd4588bdd6bdb3cc751c4bbc8704);
+            
+        
+
+        circle_marker_3069fb083f0daa4227ef9a2d02bd565c.bindPopup(popup_23ac57d2531ca639b8c35fadf6489464)
+        ;
+
+        
+    
+    
+            var circle_marker_2bfb30382bb130895bc366f7aa6954b5 = L.circleMarker(
+                [50.87866974, 12.07843781],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_83abbef78f11434283a057249b145d3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3681b7341a8a44a308995a36e0e69226 = $(`<div id="html_3681b7341a8a44a308995a36e0e69226" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:A2:1D:69 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 100 <br> </li>                 </ul>                 </div>`)[0];
+                popup_83abbef78f11434283a057249b145d3f.setContent(html_3681b7341a8a44a308995a36e0e69226);
+            
+        
+
+        circle_marker_2bfb30382bb130895bc366f7aa6954b5.bindPopup(popup_83abbef78f11434283a057249b145d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_57c765c67f021c009b708222c1ab2722 = L.circleMarker(
+                [50.87861633, 12.07979298],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_0e7c1915a08450ec1843e891052f6c0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d11f033ce0b62e910aa249dbe4cc1261 = $(`<div id="html_d11f033ce0b62e910aa249dbe4cc1261" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:B5:B9:8E <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_0e7c1915a08450ec1843e891052f6c0c.setContent(html_d11f033ce0b62e910aa249dbe4cc1261);
+            
+        
+
+        circle_marker_57c765c67f021c009b708222c1ab2722.bindPopup(popup_0e7c1915a08450ec1843e891052f6c0c)
+        ;
+
+        
+    
+    
+            var circle_marker_c97ae75b1f7e78fedea205863acaef09 = L.circleMarker(
+                [50.8784256, 12.07985115],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_ad4785dbd98af83744e677add01eb3ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3a36c4a365606c347c4aef412835789 = $(`<div id="html_d3a36c4a365606c347c4aef412835789" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:B5:B9:96 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 100 <br> </li>                 </ul>                 </div>`)[0];
+                popup_ad4785dbd98af83744e677add01eb3ea.setContent(html_d3a36c4a365606c347c4aef412835789);
+            
+        
+
+        circle_marker_c97ae75b1f7e78fedea205863acaef09.bindPopup(popup_ad4785dbd98af83744e677add01eb3ea)
+        ;
+
+        
+    
+    
+            var circle_marker_26bd891ad0593b296c9316aaf2c8e514 = L.circleMarker(
+                [50.87817764, 12.07995796],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_78d1b6a07aaff13619f0744bdccba920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec13b463507fcf3c49584d9857f77457 = $(`<div id="html_ec13b463507fcf3c49584d9857f77457" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:B5:B9:B0 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_78d1b6a07aaff13619f0744bdccba920.setContent(html_ec13b463507fcf3c49584d9857f77457);
+            
+        
+
+        circle_marker_26bd891ad0593b296c9316aaf2c8e514.bindPopup(popup_78d1b6a07aaff13619f0744bdccba920)
+        ;
+
+        
+    
+    
+            var circle_marker_e4261ae50da4be51feff9f859bab5d56 = L.circleMarker(
+                [50.87880707, 12.07988358],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_9bffe6acd04c0ffd323d19f7d84dfd44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fcf7d8574c71790b5496386bca57df79 = $(`<div id="html_fcf7d8574c71790b5496386bca57df79" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:B5:BA:16 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_9bffe6acd04c0ffd323d19f7d84dfd44.setContent(html_fcf7d8574c71790b5496386bca57df79);
+            
+        
+
+        circle_marker_e4261ae50da4be51feff9f859bab5d56.bindPopup(popup_9bffe6acd04c0ffd323d19f7d84dfd44)
+        ;
+
+        
+    
+    
+            var circle_marker_ed88caa12dce2cca4aa84e0ff45aa3cf = L.circleMarker(
+                [50.8784523, 12.07980537],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_41a32f2ee5a0d5307d989da37544c954 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36ca99c7693a2a9c919e29c95bfa3dbd = $(`<div id="html_36ca99c7693a2a9c919e29c95bfa3dbd" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:B5:BA:1E <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 100 <br> </li>                 </ul>                 </div>`)[0];
+                popup_41a32f2ee5a0d5307d989da37544c954.setContent(html_36ca99c7693a2a9c919e29c95bfa3dbd);
+            
+        
+
+        circle_marker_ed88caa12dce2cca4aa84e0ff45aa3cf.bindPopup(popup_41a32f2ee5a0d5307d989da37544c954)
+        ;
+
+        
+    
+    
+            var circle_marker_30bd650a42ee06f2986d20f9aec2ef6b = L.circleMarker(
+                [50.87845993, 12.07904243],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_96caa0afe6218c66861c96298a0986ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e68eedc1f1d8c3739049fc5d80571d3 = $(`<div id="html_7e68eedc1f1d8c3739049fc5d80571d3" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1A:8C:B6:4F:71 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_96caa0afe6218c66861c96298a0986ca.setContent(html_7e68eedc1f1d8c3739049fc5d80571d3);
+            
+        
+
+        circle_marker_30bd650a42ee06f2986d20f9aec2ef6b.bindPopup(popup_96caa0afe6218c66861c96298a0986ca)
+        ;
+
+        
+    
+    
+            var circle_marker_d59148f7f3b74bbc728a6fef71dfec71 = L.circleMarker(
+                [49.05040359, 12.08323097],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_702a910197361cd6b43f16716bd34c97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbbfe8314ae49b9100131b375b9a72e3 = $(`<div id="html_cbbfe8314ae49b9100131b375b9a72e3" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1A:8C:D3:0F:94 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 9 <br> </li>                 </ul>                 </div>`)[0];
+                popup_702a910197361cd6b43f16716bd34c97.setContent(html_cbbfe8314ae49b9100131b375b9a72e3);
+            
+        
+
+        circle_marker_d59148f7f3b74bbc728a6fef71dfec71.bindPopup(popup_702a910197361cd6b43f16716bd34c97)
+        ;
+
+        
+    
+    
+            var circle_marker_0d31378c70285c0a2477516582c864c7 = L.circleMarker(
+                [52.50242233, 13.32453442],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f2896460f73a77a4c2fb7d2a1f1cbd5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_123074d88f81bfc228430c404bbc7caf = $(`<div id="html_123074d88f81bfc228430c404bbc7caf" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1A:A2:A2:1B:B1 <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 3 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f2896460f73a77a4c2fb7d2a1f1cbd5f.setContent(html_123074d88f81bfc228430c404bbc7caf);
+            
+        
+
+        circle_marker_0d31378c70285c0a2477516582c864c7.bindPopup(popup_f2896460f73a77a4c2fb7d2a1f1cbd5f)
+        ;
+
+        
+    
+    
+            var circle_marker_3499928fcd3f3fc56cba6333eb3f4813 = L.circleMarker(
+                [52.50258255, 13.32542801],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_34652a28552129fe0126beb8c93e56d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40522fcff999a561abe39fd8d3ffb558 = $(`<div id="html_40522fcff999a561abe39fd8d3ffb558" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1A:A2:A2:28:71 <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_34652a28552129fe0126beb8c93e56d4.setContent(html_40522fcff999a561abe39fd8d3ffb558);
+            
+        
+
+        circle_marker_3499928fcd3f3fc56cba6333eb3f4813.bindPopup(popup_34652a28552129fe0126beb8c93e56d4)
+        ;
+
+        
+    
+    
+            var circle_marker_087a8e4e4fd2973411551fdaadc014d9 = L.circleMarker(
+                [50.16524887, 8.5847559],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_ab2461f4b0264c2962935459e1296d52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c55fdc2051312a313c2c8f10b9faaff6 = $(`<div id="html_c55fdc2051312a313c2c8f10b9faaff6" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1B:2F:F5:7B:F8 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 7 <br> </li>                 </ul>                 </div>`)[0];
+                popup_ab2461f4b0264c2962935459e1296d52.setContent(html_c55fdc2051312a313c2c8f10b9faaff6);
+            
+        
+
+        circle_marker_087a8e4e4fd2973411551fdaadc014d9.bindPopup(popup_ab2461f4b0264c2962935459e1296d52)
+        ;
+
+        
+    
+    
+            var circle_marker_a2c11e197fdf06044f65ae1ababede36 = L.circleMarker(
+                [53.55363464, 9.90977859],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_6938f5b39e94f06c1d62ea0fd44f8d0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c9547c32e1c5007c5d3382b841a0610 = $(`<div id="html_7c9547c32e1c5007c5d3382b841a0610" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:1C:4A:A6:C1:52 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_6938f5b39e94f06c1d62ea0fd44f8d0b.setContent(html_7c9547c32e1c5007c5d3382b841a0610);
+            
+        
+
+        circle_marker_a2c11e197fdf06044f65ae1ababede36.bindPopup(popup_6938f5b39e94f06c1d62ea0fd44f8d0b)
+        ;
+
+        
+    
+    
+            var circle_marker_ebd06e32a8ba0aabe4a22b1232891335 = L.circleMarker(
+                [50.23026276, 8.61464787],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_68df7052e7ba505446f2a4598d57bd48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecf129e198854d9f698342643955830c = $(`<div id="html_ecf129e198854d9f698342643955830c" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1C:C5:D8:3D:4B <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_68df7052e7ba505446f2a4598d57bd48.setContent(html_ecf129e198854d9f698342643955830c);
+            
+        
+
+        circle_marker_ebd06e32a8ba0aabe4a22b1232891335.bindPopup(popup_68df7052e7ba505446f2a4598d57bd48)
+        ;
+
+        
+    
+    
+            var circle_marker_f410af5f6a1686a7210b614a969d23c7 = L.circleMarker(
+                [48.1375351, 11.55473709],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_844b394231470e0108ca1be5bd86ef85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51741e44402215dc6a5c81c205953ff0 = $(`<div id="html_51741e44402215dc6a5c81c205953ff0" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:1D:AA:E4:EC:D0 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 3 <br> </li>                 </ul>                 </div>`)[0];
+                popup_844b394231470e0108ca1be5bd86ef85.setContent(html_51741e44402215dc6a5c81c205953ff0);
+            
+        
+
+        circle_marker_f410af5f6a1686a7210b614a969d23c7.bindPopup(popup_844b394231470e0108ca1be5bd86ef85)
+        ;
+
+        
+    
+    
+            var circle_marker_103c5dbc2cac21f8552cce08cfe89fe8 = L.circleMarker(
+                [48.13753128, 11.55449581],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_0a1be9156892e95d7f7a9753eacdee61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9a53ab02215feecf9b309bbf776a41a = $(`<div id="html_d9a53ab02215feecf9b309bbf776a41a" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:1D:AA:E4:EC:D2 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 36 <br> </li>                 </ul>                 </div>`)[0];
+                popup_0a1be9156892e95d7f7a9753eacdee61.setContent(html_d9a53ab02215feecf9b309bbf776a41a);
+            
+        
+
+        circle_marker_103c5dbc2cac21f8552cce08cfe89fe8.bindPopup(popup_0a1be9156892e95d7f7a9753eacdee61)
+        ;
+
+        
+    
+    
+            var circle_marker_d95ca96b251c43047ee1756d230f4da5 = L.circleMarker(
+                [47.55635071, 7.64606619],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_dfabc3f761a91e63af120fac7a06c6e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a74e8cc4d7fd7d746cd8dca2454e5376 = $(`<div id="html_a74e8cc4d7fd7d746cd8dca2454e5376" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1E:58:0E:75:66 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_dfabc3f761a91e63af120fac7a06c6e7.setContent(html_a74e8cc4d7fd7d746cd8dca2454e5376);
+            
+        
+
+        circle_marker_d95ca96b251c43047ee1756d230f4da5.bindPopup(popup_dfabc3f761a91e63af120fac7a06c6e7)
+        ;
+
+        
+    
+    
+            var circle_marker_6d55f4eaf21dbc7881928b8b15116a86 = L.circleMarker(
+                [50.85650253, 13.07042503],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_6390d5e246cc5c84ccb19f30976a7ef6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ef8d3483f390ad6e4d89e358ade6b9b = $(`<div id="html_5ef8d3483f390ad6e4d89e358ade6b9b" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:1F:1F:6C:27:18 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_6390d5e246cc5c84ccb19f30976a7ef6.setContent(html_5ef8d3483f390ad6e4d89e358ade6b9b);
+            
+        
+
+        circle_marker_6d55f4eaf21dbc7881928b8b15116a86.bindPopup(popup_6390d5e246cc5c84ccb19f30976a7ef6)
+        ;
+
+        
+    
+    
+            var circle_marker_a6149e7b629e1e37a41530926d14eb94 = L.circleMarker(
+                [48.15018463, 11.54480076],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_1f4fcd8ba9d0268fb203452c884c53c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17a65b2ddd6befdfdacaf14fcb815b8f = $(`<div id="html_17a65b2ddd6befdfdacaf14fcb815b8f" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1F:3F:12:9B:FE <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_1f4fcd8ba9d0268fb203452c884c53c6.setContent(html_17a65b2ddd6befdfdacaf14fcb815b8f);
+            
+        
+
+        circle_marker_a6149e7b629e1e37a41530926d14eb94.bindPopup(popup_1f4fcd8ba9d0268fb203452c884c53c6)
+        ;
+
+        
+    
+    
+            var circle_marker_384bdb6eff24b0067661407f79c8ba2d = L.circleMarker(
+                [51.24444962, 6.80047798],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_60518c40d0e434092eb37d5199d6edad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ec001ad649c94d4e20c948cd842b347 = $(`<div id="html_1ec001ad649c94d4e20c948cd842b347" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:1F:3F:A5:05:FD <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_60518c40d0e434092eb37d5199d6edad.setContent(html_1ec001ad649c94d4e20c948cd842b347);
+            
+        
+
+        circle_marker_384bdb6eff24b0067661407f79c8ba2d.bindPopup(popup_60518c40d0e434092eb37d5199d6edad)
+        ;
+
+        
+    
+    
+            var circle_marker_c54b0e8fd17d840491c7e7e381d6b61c = L.circleMarker(
+                [51.21860886, 6.60370731],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_64d0573efe572ed064ddedc3d3d7c0b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_872317d7fc396283c1b2be9bc7ce3146 = $(`<div id="html_872317d7fc396283c1b2be9bc7ce3146" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:1F:3F:D7:07:BB <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_64d0573efe572ed064ddedc3d3d7c0b9.setContent(html_872317d7fc396283c1b2be9bc7ce3146);
+            
+        
+
+        circle_marker_c54b0e8fd17d840491c7e7e381d6b61c.bindPopup(popup_64d0573efe572ed064ddedc3d3d7c0b9)
+        ;
+
+        
+    
+    
+            var circle_marker_2980bf0fee139926879da2d1aa278b86 = L.circleMarker(
+                [54.33948517, 10.2202301],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_44ad2cfc2b7877f06aeb6a8d80344b6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09e0d80bb428bff99b4541a29c7cd090 = $(`<div id="html_09e0d80bb428bff99b4541a29c7cd090" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:22:6B:7A:5D:EC <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_44ad2cfc2b7877f06aeb6a8d80344b6b.setContent(html_09e0d80bb428bff99b4541a29c7cd090);
+            
+        
+
+        circle_marker_2980bf0fee139926879da2d1aa278b86.bindPopup(popup_44ad2cfc2b7877f06aeb6a8d80344b6b)
+        ;
+
+        
+    
+    
+            var circle_marker_3841e995e99ba4a33d2cd0478bc57a11 = L.circleMarker(
+                [49.88936996, 8.40150166],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f1ce69c8b09629cd1c410bbd638784da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87079833d3c40a0fa9a8c665fe062a73 = $(`<div id="html_87079833d3c40a0fa9a8c665fe062a73" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:24:6C:19:2D:A0 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f1ce69c8b09629cd1c410bbd638784da.setContent(html_87079833d3c40a0fa9a8c665fe062a73);
+            
+        
+
+        circle_marker_3841e995e99ba4a33d2cd0478bc57a11.bindPopup(popup_f1ce69c8b09629cd1c410bbd638784da)
+        ;
+
+        
+    
+    
+            var circle_marker_04eff2f5672754e7b01ba606d3467185 = L.circleMarker(
+                [49.88959503, 8.4017868],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_9c57c14af59fd1c1238d2866cf80f065 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0401f96a0999502c0553f94e3b47fd74 = $(`<div id="html_0401f96a0999502c0553f94e3b47fd74" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:24:6C:19:31:20 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_9c57c14af59fd1c1238d2866cf80f065.setContent(html_0401f96a0999502c0553f94e3b47fd74);
+            
+        
+
+        circle_marker_04eff2f5672754e7b01ba606d3467185.bindPopup(popup_9c57c14af59fd1c1238d2866cf80f065)
+        ;
+
+        
+    
+    
+            var circle_marker_653bd4659ae6127d5e5b48ea8b02621e = L.circleMarker(
+                [49.89404297, 8.39740276],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_e1961380c8e6ba48bc1e7c514925d412 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7ff63d2d0d2ba9a9d6f732b7f94f640 = $(`<div id="html_f7ff63d2d0d2ba9a9d6f732b7f94f640" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:24:6C:19:31:40 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_e1961380c8e6ba48bc1e7c514925d412.setContent(html_f7ff63d2d0d2ba9a9d6f732b7f94f640);
+            
+        
+
+        circle_marker_653bd4659ae6127d5e5b48ea8b02621e.bindPopup(popup_e1961380c8e6ba48bc1e7c514925d412)
+        ;
+
+        
+    
+    
+            var circle_marker_4a9e3dfd40f40013f13fb89e598fea5e = L.circleMarker(
+                [49.88968277, 8.39958],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_08449c443a35ff9cae083512b9d52576 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e889857a3d1c5cc7cca4bb072b7dcef1 = $(`<div id="html_e889857a3d1c5cc7cca4bb072b7dcef1" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:24:6C:19:32:20 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_08449c443a35ff9cae083512b9d52576.setContent(html_e889857a3d1c5cc7cca4bb072b7dcef1);
+            
+        
+
+        circle_marker_4a9e3dfd40f40013f13fb89e598fea5e.bindPopup(popup_08449c443a35ff9cae083512b9d52576)
+        ;
+
+        
+    
+    
+            var circle_marker_a07623c1d53e1add149a5ea063e043ca = L.circleMarker(
+                [49.89001083, 8.3999424],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f272bc84a8901f1bdefd078b52ddc33d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_300b970aac56384ba5cd31824deb3b1c = $(`<div id="html_300b970aac56384ba5cd31824deb3b1c" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:24:6C:19:35:40 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f272bc84a8901f1bdefd078b52ddc33d.setContent(html_300b970aac56384ba5cd31824deb3b1c);
+            
+        
+
+        circle_marker_a07623c1d53e1add149a5ea063e043ca.bindPopup(popup_f272bc84a8901f1bdefd078b52ddc33d)
+        ;
+
+        
+    
+    
+            var circle_marker_5ee9263a18e93b33aa1e3906f391b792 = L.circleMarker(
+                [49.88936615, 8.40229034],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_b353970b2b01fc96097b592cce0e8fed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_284643f733feaa81e35f0597e4465ec2 = $(`<div id="html_284643f733feaa81e35f0597e4465ec2" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:24:6C:19:35:80 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_b353970b2b01fc96097b592cce0e8fed.setContent(html_284643f733feaa81e35f0597e4465ec2);
+            
+        
+
+        circle_marker_5ee9263a18e93b33aa1e3906f391b792.bindPopup(popup_b353970b2b01fc96097b592cce0e8fed)
+        ;
+
+        
+    
+    
+            var circle_marker_5c2fd221d21e7a3ac92d7969b457b724 = L.circleMarker(
+                [49.05881119, 12.06464767],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_66892281f7f6d47d043088f3783c7641 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aedf5791b064bd44a08c34992cadcbb0 = $(`<div id="html_aedf5791b064bd44a08c34992cadcbb0" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:24:FE:01:EA:31 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_66892281f7f6d47d043088f3783c7641.setContent(html_aedf5791b064bd44a08c34992cadcbb0);
+            
+        
+
+        circle_marker_5c2fd221d21e7a3ac92d7969b457b724.bindPopup(popup_66892281f7f6d47d043088f3783c7641)
+        ;
+
+        
+    
+    
+            var circle_marker_e374ab432c59f64990545e95a93b7144 = L.circleMarker(
+                [53.55363464, 9.93319225],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_694c981a180525f2e1091c059d147050 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6559a1ec5cc93860070fdd7856b30dec = $(`<div id="html_6559a1ec5cc93860070fdd7856b30dec" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 00:24:FE:05:FA:C8 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_694c981a180525f2e1091c059d147050.setContent(html_6559a1ec5cc93860070fdd7856b30dec);
+            
+        
+
+        circle_marker_e374ab432c59f64990545e95a93b7144.bindPopup(popup_694c981a180525f2e1091c059d147050)
+        ;
+
+        
+    
+    
+            var circle_marker_aab5708e4967363a95bd9be6c4d6cc0b = L.circleMarker(
+                [51.01042938, 13.79723358],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f2e316531a9dd289a42663a59a21e160 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ff52b59f728c05264000e1e603e4220 = $(`<div id="html_5ff52b59f728c05264000e1e603e4220" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:24:FE:41:BD:7C <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f2e316531a9dd289a42663a59a21e160.setContent(html_5ff52b59f728c05264000e1e603e4220);
+            
+        
+
+        circle_marker_aab5708e4967363a95bd9be6c4d6cc0b.bindPopup(popup_f2e316531a9dd289a42663a59a21e160)
+        ;
+
+        
+    
+    
+            var circle_marker_06139827bc4ec4767efda2c2e992725c = L.circleMarker(
+                [50.10680389, 8.67226887],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f1fb76f95b2ec31650d1717460440ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f76a159259830c789b8cb96398fcd9f0 = $(`<div id="html_f76a159259830c789b8cb96398fcd9f0" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:24:FE:49:52:22 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f1fb76f95b2ec31650d1717460440ea6.setContent(html_f76a159259830c789b8cb96398fcd9f0);
+            
+        
+
+        circle_marker_06139827bc4ec4767efda2c2e992725c.bindPopup(popup_f1fb76f95b2ec31650d1717460440ea6)
+        ;
+
+        
+    
+    
+            var circle_marker_ba311cbd9dfb9dcdd67d2f700c2e3fc7 = L.circleMarker(
+                [51.48174286, 7.36862135],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_306152cfe91068aa0aaa5a264a1b4390 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84571f5fa16990148e849590d3dc2921 = $(`<div id="html_84571f5fa16990148e849590d3dc2921" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:26:4D:C0:19:65 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_306152cfe91068aa0aaa5a264a1b4390.setContent(html_84571f5fa16990148e849590d3dc2921);
+            
+        
+
+        circle_marker_ba311cbd9dfb9dcdd67d2f700c2e3fc7.bindPopup(popup_306152cfe91068aa0aaa5a264a1b4390)
+        ;
+
+        
+    
+    
+            var circle_marker_6f4518807d542b5f39e57ca682368a87 = L.circleMarker(
+                [51.26440048, 7.15001726],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_24bb02e7c3957da15026b24649d9e10d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4bb816efd014f5a646dbc1e893874fe = $(`<div id="html_c4bb816efd014f5a646dbc1e893874fe" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 00:60:B3:7A:67:41 <br> </li>                     <li>Encryption: wep <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_24bb02e7c3957da15026b24649d9e10d.setContent(html_c4bb816efd014f5a646dbc1e893874fe);
+            
+        
+
+        circle_marker_6f4518807d542b5f39e57ca682368a87.bindPopup(popup_24bb02e7c3957da15026b24649d9e10d)
+        ;
+
+        
+    
+    
+            var circle_marker_93da05a2ec08a0665d345debafb96835 = L.circleMarker(
+                [49.15618896, 11.12958145],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_58b71990000f247591fe91e861488104 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eebdbd3821eb79d4ac43ff0d3de9307e = $(`<div id="html_eebdbd3821eb79d4ac43ff0d3de9307e" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 00:A0:F9:46:1D:88 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_58b71990000f247591fe91e861488104.setContent(html_eebdbd3821eb79d4ac43ff0d3de9307e);
+            
+        
+
+        circle_marker_93da05a2ec08a0665d345debafb96835.bindPopup(popup_58b71990000f247591fe91e861488104)
+        ;
+
+        
+    
+    
+            var circle_marker_ec82829319d562bd407b16b84af8dc84 = L.circleMarker(
+                [52.32397079, 9.80665779],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_be2025c2865e1d0f18e76c8a2824931d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_682195384d4950882bc9814dfa97d184 = $(`<div id="html_682195384d4950882bc9814dfa97d184" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 02:1A:11:F9:5F:C9 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_be2025c2865e1d0f18e76c8a2824931d.setContent(html_682195384d4950882bc9814dfa97d184);
+            
+        
+
+        circle_marker_ec82829319d562bd407b16b84af8dc84.bindPopup(popup_be2025c2865e1d0f18e76c8a2824931d)
+        ;
+
+        
+    
+    
+            var circle_marker_850e4b444d23d4e395b82b001bed91c9 = L.circleMarker(
+                [50.9405899, 7.04302979],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_56e90b57d36b40517788671db9eb4257 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1ad8ffb9c2aff91bf64ec8bcfedd17f = $(`<div id="html_e1ad8ffb9c2aff91bf64ec8bcfedd17f" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 02:34:07:1D:3A:B5 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_56e90b57d36b40517788671db9eb4257.setContent(html_e1ad8ffb9c2aff91bf64ec8bcfedd17f);
+            
+        
+
+        circle_marker_850e4b444d23d4e395b82b001bed91c9.bindPopup(popup_56e90b57d36b40517788671db9eb4257)
+        ;
+
+        
+    
+    
+            var circle_marker_e9aea9a079e8cc8411164270eb78b17c = L.circleMarker(
+                [53.25102615, 10.43409634],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_6040d8f59a6349ac5726e5e23d72f46a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bab0bed7b00e57ac48920ea3e9f4b555 = $(`<div id="html_bab0bed7b00e57ac48920ea3e9f4b555" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 02:9F:C2:F1:E9:69 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_6040d8f59a6349ac5726e5e23d72f46a.setContent(html_bab0bed7b00e57ac48920ea3e9f4b555);
+            
+        
+
+        circle_marker_e9aea9a079e8cc8411164270eb78b17c.bindPopup(popup_6040d8f59a6349ac5726e5e23d72f46a)
+        ;
+
+        
+    
+    
+            var circle_marker_2dac1aa7b6fb490cbdbee0cefb6ee662 = L.circleMarker(
+                [51.95113754, 8.57438946],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_af9b9c3f68498030dee2b2b9b38cbe01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdf9427d7251eaea63c0fc23d8d7b1f0 = $(`<div id="html_fdf9427d7251eaea63c0fc23d8d7b1f0" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 02:EC:DA:87:DF:30 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_af9b9c3f68498030dee2b2b9b38cbe01.setContent(html_fdf9427d7251eaea63c0fc23d8d7b1f0);
+            
+        
+
+        circle_marker_2dac1aa7b6fb490cbdbee0cefb6ee662.bindPopup(popup_af9b9c3f68498030dee2b2b9b38cbe01)
+        ;
+
+        
+    
+    
+            var circle_marker_9a5f7aaef5760d291d86198a45175a22 = L.circleMarker(
+                [51.91251755, 10.42866325],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_404937093817978d2ab2f78c5205264f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d6938293a66191866e05ad7d18f5f58 = $(`<div id="html_7d6938293a66191866e05ad7d18f5f58" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 06:24:FE:1D:9A:BC <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_404937093817978d2ab2f78c5205264f.setContent(html_7d6938293a66191866e05ad7d18f5f58);
+            
+        
+
+        circle_marker_9a5f7aaef5760d291d86198a45175a22.bindPopup(popup_404937093817978d2ab2f78c5205264f)
+        ;
+
+        
+    
+    
+            var circle_marker_7c5a36fc792d7807fcf869fd07118299 = L.circleMarker(
+                [51.2443161, 6.80114985],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_ad9b5e52d43c9555ba6098b48bfd7cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64e71ecd3ad44fa79852d7b84774520b = $(`<div id="html_64e71ecd3ad44fa79852d7b84774520b" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 06:24:FE:F1:AB:D4 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_ad9b5e52d43c9555ba6098b48bfd7cb1.setContent(html_64e71ecd3ad44fa79852d7b84774520b);
+            
+        
+
+        circle_marker_7c5a36fc792d7807fcf869fd07118299.bindPopup(popup_ad9b5e52d43c9555ba6098b48bfd7cb1)
+        ;
+
+        
+    
+    
+            var circle_marker_0b7dfdcf703c711c4cb350b316da1484 = L.circleMarker(
+                [51.49900055, 7.47684956],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f174548f9dfe1053e56a2e6317e11529 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e88fd1798f941b8f4569d48b984623d = $(`<div id="html_6e88fd1798f941b8f4569d48b984623d" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 06:D6:AA:73:91:4E <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f174548f9dfe1053e56a2e6317e11529.setContent(html_6e88fd1798f941b8f4569d48b984623d);
+            
+        
+
+        circle_marker_0b7dfdcf703c711c4cb350b316da1484.bindPopup(popup_f174548f9dfe1053e56a2e6317e11529)
+        ;
+
+        
+    
+    
+            var circle_marker_16189b37b251a09cf0f40d99c33eccc9 = L.circleMarker(
+                [48.28174591, 12.16494465],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_c142d1d60b83304fb742f37ea1296714 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a91a2e6218dfb972d960ac39cf9dc8be = $(`<div id="html_a91a2e6218dfb972d960ac39cf9dc8be" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 06:EC:DA:17:41:52 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_c142d1d60b83304fb742f37ea1296714.setContent(html_a91a2e6218dfb972d960ac39cf9dc8be);
+            
+        
+
+        circle_marker_16189b37b251a09cf0f40d99c33eccc9.bindPopup(popup_c142d1d60b83304fb742f37ea1296714)
+        ;
+
+        
+    
+    
+            var circle_marker_45ee1991ec0d8de83228de0a4d22a488 = L.circleMarker(
+                [48.11130142, 11.62439632],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_9729306c0f0bbe02c0fbac46e20c490b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e801e4d96eeb1e470d8ef5fda61f93d1 = $(`<div id="html_e801e4d96eeb1e470d8ef5fda61f93d1" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 08:96:D7:18:9D:AD <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_9729306c0f0bbe02c0fbac46e20c490b.setContent(html_e801e4d96eeb1e470d8ef5fda61f93d1);
+            
+        
+
+        circle_marker_45ee1991ec0d8de83228de0a4d22a488.bindPopup(popup_9729306c0f0bbe02c0fbac46e20c490b)
+        ;
+
+        
+    
+    
+            var circle_marker_7ee8ae9aab3230d0903c5205eb072763 = L.circleMarker(
+                [51.21853638, 6.60400915],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_52276f953719ef09ae0579016c7246a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e022388ef2257dcff470238b3ec7eae2 = $(`<div id="html_e022388ef2257dcff470238b3ec7eae2" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 08:96:D7:41:A0:6F <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_52276f953719ef09ae0579016c7246a5.setContent(html_e022388ef2257dcff470238b3ec7eae2);
+            
+        
+
+        circle_marker_7ee8ae9aab3230d0903c5205eb072763.bindPopup(popup_52276f953719ef09ae0579016c7246a5)
+        ;
+
+        
+    
+    
+            var circle_marker_888e34641c0d443b2bca549d55957339 = L.circleMarker(
+                [51.21819687, 6.60302305],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_98aa37703824e52e6ee270d6f12505cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b907336fe0e128a4705e007920c22794 = $(`<div id="html_b907336fe0e128a4705e007920c22794" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 08:96:D7:41:A0:70 <br> </li>                     <li>Encryption: wpa3 <br> </li>                     <li>Channel: 108 <br> </li>                 </ul>                 </div>`)[0];
+                popup_98aa37703824e52e6ee270d6f12505cc.setContent(html_b907336fe0e128a4705e007920c22794);
+            
+        
+
+        circle_marker_888e34641c0d443b2bca549d55957339.bindPopup(popup_98aa37703824e52e6ee270d6f12505cc)
+        ;
+
+        
+    
+    
+            var circle_marker_9d5d35e063baf309bede624065a418fb = L.circleMarker(
+                [49.46519089, 11.08210564],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f206ca3a3c3e508385652c382498e645 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25b9ceed8918937adb8d8ee73d6229bc = $(`<div id="html_25b9ceed8918937adb8d8ee73d6229bc" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>StS</b> <br> </li>                     <li>MAC: 08:96:D7:46:18:93 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f206ca3a3c3e508385652c382498e645.setContent(html_25b9ceed8918937adb8d8ee73d6229bc);
+            
+        
+
+        circle_marker_9d5d35e063baf309bede624065a418fb.bindPopup(popup_f206ca3a3c3e508385652c382498e645)
+        ;
+
+        
+    
+    
+            var circle_marker_d1bcd47d37f624eb68db8e4ebf8d8b10 = L.circleMarker(
+                [49.40953445, 8.7034483],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_e6db1744b2eb46d190d0de1eac9e879f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_399102e8d99cb9fd0345aa2488d358fc = $(`<div id="html_399102e8d99cb9fd0345aa2488d358fc" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 08:96:D7:8C:2A:72 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 4 <br> </li>                 </ul>                 </div>`)[0];
+                popup_e6db1744b2eb46d190d0de1eac9e879f.setContent(html_399102e8d99cb9fd0345aa2488d358fc);
+            
+        
+
+        circle_marker_d1bcd47d37f624eb68db8e4ebf8d8b10.bindPopup(popup_e6db1744b2eb46d190d0de1eac9e879f)
+        ;
+
+        
+    
+    
+            var circle_marker_ee7c5f0b9be6523f2ac39e26e333a6dc = L.circleMarker(
+                [49.40934753, 8.70365715],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_68d0b62732b2b343cc70680cc3fab339 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36a92568367cd5ebb4e205fe80776834 = $(`<div id="html_36a92568367cd5ebb4e205fe80776834" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 08:96:D7:8C:2A:73 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 100 <br> </li>                 </ul>                 </div>`)[0];
+                popup_68d0b62732b2b343cc70680cc3fab339.setContent(html_36a92568367cd5ebb4e205fe80776834);
+            
+        
+
+        circle_marker_ee7c5f0b9be6523f2ac39e26e333a6dc.bindPopup(popup_68d0b62732b2b343cc70680cc3fab339)
+        ;
+
+        
+    
+    
+            var circle_marker_63c400e36f8fbe738cfa8a44bc529b57 = L.circleMarker(
+                [50.25595474, 8.64088917],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_57133e3ae87b57fd395762c1e61987c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73f9f80ed3b410d679a4614e25720e36 = $(`<div id="html_73f9f80ed3b410d679a4614e25720e36" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 08:96:D7:D1:6A:A9 <br> </li>                     <li>Encryption: wpa3 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_57133e3ae87b57fd395762c1e61987c2.setContent(html_73f9f80ed3b410d679a4614e25720e36);
+            
+        
+
+        circle_marker_63c400e36f8fbe738cfa8a44bc529b57.bindPopup(popup_57133e3ae87b57fd395762c1e61987c2)
+        ;
+
+        
+    
+    
+            var circle_marker_9e9bcc5a69b21e884237b353a5824dc7 = L.circleMarker(
+                [50.25576401, 8.64048386],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_f8454b68ed4876666f1a23f59cb813c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a94c97107bcc403d5364c8369e987911 = $(`<div id="html_a94c97107bcc403d5364c8369e987911" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 08:96:D7:D1:6A:AD <br> </li>                     <li>Encryption: wpa3 <br> </li>                     <li>Channel: 108 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f8454b68ed4876666f1a23f59cb813c1.setContent(html_a94c97107bcc403d5364c8369e987911);
+            
+        
+
+        circle_marker_9e9bcc5a69b21e884237b353a5824dc7.bindPopup(popup_f8454b68ed4876666f1a23f59cb813c1)
+        ;
+
+        
+    
+    
+            var circle_marker_d0d416532de1bf8ddabd3e19af3534c1 = L.circleMarker(
+                [51.12252426, 7.16724157],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_2e904f6eb1c4c3c743f3a988eb06d1a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee735674a444d310614afc86e8f9a4bb = $(`<div id="html_ee735674a444d310614afc86e8f9a4bb" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 0A:C5:E1:7B:B6:C1 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_2e904f6eb1c4c3c743f3a988eb06d1a7.setContent(html_ee735674a444d310614afc86e8f9a4bb);
+            
+        
+
+        circle_marker_d0d416532de1bf8ddabd3e19af3534c1.bindPopup(popup_2e904f6eb1c4c3c743f3a988eb06d1a7)
+        ;
+
+        
+    
+    
+            var circle_marker_2ff0671033e70c9b4f588ccccf67ffb9 = L.circleMarker(
+                [48.28180695, 12.16495228],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_dcd9d74f579c22622efa797cc9e520f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f51ab2dcebe18330cfbac55540e7ba72 = $(`<div id="html_f51ab2dcebe18330cfbac55540e7ba72" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 0A:EC:DA:18:41:52 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 44 <br> </li>                 </ul>                 </div>`)[0];
+                popup_dcd9d74f579c22622efa797cc9e520f4.setContent(html_f51ab2dcebe18330cfbac55540e7ba72);
+            
+        
+
+        circle_marker_2ff0671033e70c9b4f588ccccf67ffb9.bindPopup(popup_dcd9d74f579c22622efa797cc9e520f4)
+        ;
+
+        
+    
+    
+            var circle_marker_140975711d405fd0a9812ab2cdc19627 = L.circleMarker(
+                [53.25098419, 10.43396473],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_6b94aa6ac94cf3f642d25ee2264942a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_756a81e3fce4814a747a45ee6b218040 = $(`<div id="html_756a81e3fce4814a747a45ee6b218040" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 12:9F:C2:F2:E9:69 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 36 <br> </li>                 </ul>                 </div>`)[0];
+                popup_6b94aa6ac94cf3f642d25ee2264942a2.setContent(html_756a81e3fce4814a747a45ee6b218040);
+            
+        
+
+        circle_marker_140975711d405fd0a9812ab2cdc19627.bindPopup(popup_6b94aa6ac94cf3f642d25ee2264942a2)
+        ;
+
+        
+    
+    
+            var circle_marker_dbc2f660b0b115a9537b4126f093af80 = L.circleMarker(
+                [53.25098801, 10.43396187],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_c4631e280c784ab1040f586b99ff27d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c0261cf2f350b62124f4c4ea9defe7e = $(`<div id="html_4c0261cf2f350b62124f4c4ea9defe7e" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 12:9F:C2:F2:EA:88 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 44 <br> </li>                 </ul>                 </div>`)[0];
+                popup_c4631e280c784ab1040f586b99ff27d4.setContent(html_4c0261cf2f350b62124f4c4ea9defe7e);
+            
+        
+
+        circle_marker_dbc2f660b0b115a9537b4126f093af80.bindPopup(popup_c4631e280c784ab1040f586b99ff27d4)
+        ;
+
+        
+    
+    
+            var circle_marker_56a1ec70e70cd72dbda436bdcb5dec04 = L.circleMarker(
+                [53.25152588, 10.4329958],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_cfd40cd3675f3488c56b6d00d2d2f3d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca31388500ef11d1580ea9099c2bcfbb = $(`<div id="html_ca31388500ef11d1580ea9099c2bcfbb" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 12:9F:C2:F2:EE:85 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 48 <br> </li>                 </ul>                 </div>`)[0];
+                popup_cfd40cd3675f3488c56b6d00d2d2f3d0.setContent(html_ca31388500ef11d1580ea9099c2bcfbb);
+            
+        
+
+        circle_marker_56a1ec70e70cd72dbda436bdcb5dec04.bindPopup(popup_cfd40cd3675f3488c56b6d00d2d2f3d0)
+        ;
+
+        
+    
+    
+            var circle_marker_82e1ca78180efbc0706d5319fed07df5 = L.circleMarker(
+                [50.87828827, 6.16720676],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_a2b1d735cb943f588f315d2c62daad41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf5ea7e875c4725827dd6fabfddcc691 = $(`<div id="html_bf5ea7e875c4725827dd6fabfddcc691" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 14:D6:4D:B4:97:D6 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_a2b1d735cb943f588f315d2c62daad41.setContent(html_bf5ea7e875c4725827dd6fabfddcc691);
+            
+        
+
+        circle_marker_82e1ca78180efbc0706d5319fed07df5.bindPopup(popup_a2b1d735cb943f588f315d2c62daad41)
+        ;
+
+        
+    
+    
+            var circle_marker_84218dd99ad76b1ffa10aea8fae6eaf0 = L.circleMarker(
+                [53.54967117, 10.05565548],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_713aadce7922e1f8cce8e67294232917 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d06495e91f21c9d864a5e582c4214bfe = $(`<div id="html_d06495e91f21c9d864a5e582c4214bfe" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 18:83:BF:87:CE:FB <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_713aadce7922e1f8cce8e67294232917.setContent(html_d06495e91f21c9d864a5e582c4214bfe);
+            
+        
+
+        circle_marker_84218dd99ad76b1ffa10aea8fae6eaf0.bindPopup(popup_713aadce7922e1f8cce8e67294232917)
+        ;
+
+        
+    
+    
+            var circle_marker_04b2a9058a808a16458f593386ea269c = L.circleMarker(
+                [53.54968262, 10.05570316],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_53996f6968dd36dcc6001914e34a00b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a81b6f80e977ada5fda979459fb718 = $(`<div id="html_e4a81b6f80e977ada5fda979459fb718" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 18:83:BF:87:CE:FD <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 100 <br> </li>                 </ul>                 </div>`)[0];
+                popup_53996f6968dd36dcc6001914e34a00b1.setContent(html_e4a81b6f80e977ada5fda979459fb718);
+            
+        
+
+        circle_marker_04b2a9058a808a16458f593386ea269c.bindPopup(popup_53996f6968dd36dcc6001914e34a00b1)
+        ;
+
+        
+    
+    
+            var circle_marker_1abaac7ae1e21357a847a9813ac1b382 = L.circleMarker(
+                [51.01641464, 7.80973673],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_3f290f0a75048119dfd62f0f87004067 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_333fb831fe456a1333bc96d548beeb8e = $(`<div id="html_333fb831fe456a1333bc96d548beeb8e" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>STS</b> <br> </li>                     <li>MAC: 18:D6:C7:9B:28:20 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_3f290f0a75048119dfd62f0f87004067.setContent(html_333fb831fe456a1333bc96d548beeb8e);
+            
+        
+
+        circle_marker_1abaac7ae1e21357a847a9813ac1b382.bindPopup(popup_3f290f0a75048119dfd62f0f87004067)
+        ;
+
+        
+    
+    
+            var circle_marker_9d252ef2fd3ba3db348254a57b9512cb = L.circleMarker(
+                [51.90151978, 8.62385464],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_011c27e24e1c5a7c6096c34c30715fdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aad9aebdbb1c5a4d1b9780278b4735ce = $(`<div id="html_aad9aebdbb1c5a4d1b9780278b4735ce" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 18:E8:29:51:DE:D2 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_011c27e24e1c5a7c6096c34c30715fdd.setContent(html_aad9aebdbb1c5a4d1b9780278b4735ce);
+            
+        
+
+        circle_marker_9d252ef2fd3ba3db348254a57b9512cb.bindPopup(popup_011c27e24e1c5a7c6096c34c30715fdd)
+        ;
+
+        
+    
+    
+            var circle_marker_024081bfadb316e97dd7c03dc4f6351b = L.circleMarker(
+                [51.95436859, 8.57581806],
+                {"bubblingMouseEvents": true, "color": "#1f78b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f78b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_4af2287b8f0f7fb04ae0ef4c63096477);
+        
+    
+        var popup_a407f02bc43d37d8d9e88ca9ccb9d870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac730829113740d4e3d3d3082d179aab = $(`<div id="html_ac730829113740d4e3d3d3082d179aab" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>d2:1a:c0:3b:39:ed</b> <br>                 <ul>                     <li>SSID: <b>sts</b> <br> </li>                     <li>MAC: 18:E8:29:51:E2:C8 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_a407f02bc43d37d8d9e88ca9ccb9d870.setContent(html_ac730829113740d4e3d3d3082d179aab);
+            
+        
+
+        circle_marker_024081bfadb316e97dd7c03dc4f6351b.bindPopup(popup_a407f02bc43d37d8d9e88ca9ccb9d870)
+        ;
+
+        
+    
+    
+            var marker_cluster_78b2679be52e18e1a747dd421be4900f = L.markerClusterGroup(
+                {"disableClusteringAtZoom": 0}
+            );
+            map_625e32ed2e31d4f336ab6a24181ce915.addLayer(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+            var circle_marker_388e75d9af5a43f33faa9aa9b741d466 = L.circleMarker(
+                [49.38269424, 11.03279591],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_f0e39e6a9210487511d78d464437c717 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65bc9758303ec7b375b947bf8b7d26bf = $(`<div id="html_65bc9758303ec7b375b947bf8b7d26bf" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 1A:FE:34:9C:92:43 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f0e39e6a9210487511d78d464437c717.setContent(html_65bc9758303ec7b375b947bf8b7d26bf);
+            
+        
+
+        circle_marker_388e75d9af5a43f33faa9aa9b741d466.bindPopup(popup_f0e39e6a9210487511d78d464437c717)
+        ;
+
+        
+    
+    
+            var circle_marker_8e55b4fc61dcbbc71edb9710518d8284 = L.circleMarker(
+                [50.84344864, 13.99240303],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_1ad4d40886519c0b74f4087b15b18ad0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18ab3619ff5806ba96fe01cef89fb3c0 = $(`<div id="html_18ab3619ff5806ba96fe01cef89fb3c0" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 1A:FE:34:CF:3B:AC <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_1ad4d40886519c0b74f4087b15b18ad0.setContent(html_18ab3619ff5806ba96fe01cef89fb3c0);
+            
+        
+
+        circle_marker_8e55b4fc61dcbbc71edb9710518d8284.bindPopup(popup_1ad4d40886519c0b74f4087b15b18ad0)
+        ;
+
+        
+    
+    
+            var circle_marker_76b9134086ac601580a0bc8e8d8c62b3 = L.circleMarker(
+                [50.44614029, 7.84223652],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_6953b851e736fe785d055f117cc46490 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9e841e279cacd87a6a7171629797179 = $(`<div id="html_d9e841e279cacd87a6a7171629797179" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 1A:FE:34:E2:10:5A <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_6953b851e736fe785d055f117cc46490.setContent(html_d9e841e279cacd87a6a7171629797179);
+            
+        
+
+        circle_marker_76b9134086ac601580a0bc8e8d8c62b3.bindPopup(popup_6953b851e736fe785d055f117cc46490)
+        ;
+
+        
+    
+    
+            var circle_marker_4e380f566531f5a89f0141c215105cb7 = L.circleMarker(
+                [48.7973671, 9.19023514],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_7b620979e0eb744d341cf7652ef1f325 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c9068df824be08a5a8cafc90bce19bf = $(`<div id="html_1c9068df824be08a5a8cafc90bce19bf" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 1A:FE:34:FA:B5:F4 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_7b620979e0eb744d341cf7652ef1f325.setContent(html_1c9068df824be08a5a8cafc90bce19bf);
+            
+        
+
+        circle_marker_4e380f566531f5a89f0141c215105cb7.bindPopup(popup_7b620979e0eb744d341cf7652ef1f325)
+        ;
+
+        
+    
+    
+            var circle_marker_69d5b6ba7f2851eafca0d56debe151e1 = L.circleMarker(
+                [47.71258926, 9.39852428],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_febbd1c9c3beaf20667ce04a4e04742a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47b76911c34fea38ae964481077ac375 = $(`<div id="html_47b76911c34fea38ae964481077ac375" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 1A:FE:34:FD:BA:E8 <br> </li>                     <li>Encryption: unknown <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_febbd1c9c3beaf20667ce04a4e04742a.setContent(html_47b76911c34fea38ae964481077ac375);
+            
+        
+
+        circle_marker_69d5b6ba7f2851eafca0d56debe151e1.bindPopup(popup_febbd1c9c3beaf20667ce04a4e04742a)
+        ;
+
+        
+    
+    
+            var circle_marker_fd1130782e02a2dbf0c8da78ef01a726 = L.circleMarker(
+                [51.94742966, 7.64232588],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_b6368212572d58805fd2686f6409d526 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f202e2ce6f45f409a83203caa106971 = $(`<div id="html_9f202e2ce6f45f409a83203caa106971" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 2E:3A:E8:0E:99:39 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_b6368212572d58805fd2686f6409d526.setContent(html_9f202e2ce6f45f409a83203caa106971);
+            
+        
+
+        circle_marker_fd1130782e02a2dbf0c8da78ef01a726.bindPopup(popup_b6368212572d58805fd2686f6409d526)
+        ;
+
+        
+    
+    
+            var circle_marker_8f357b6d2feffb40307d75a993aae93a = L.circleMarker(
+                [52.52412415, 13.38969612],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_9ea40e3e7fe1ab38d5e4ef3fde12aa0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c3b512bac33322cc2672fa38d80a936 = $(`<div id="html_4c3b512bac33322cc2672fa38d80a936" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:00:18:C2 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_9ea40e3e7fe1ab38d5e4ef3fde12aa0c.setContent(html_4c3b512bac33322cc2672fa38d80a936);
+            
+        
+
+        circle_marker_8f357b6d2feffb40307d75a993aae93a.bindPopup(popup_9ea40e3e7fe1ab38d5e4ef3fde12aa0c)
+        ;
+
+        
+    
+    
+            var circle_marker_04e198f0e62760055ff6855a89c10898 = L.circleMarker(
+                [49.46398926, 11.08258724],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_47f77ab8210ddeb6ba5f65efecc75105 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ab466c067ca68e2162579d223524add = $(`<div id="html_0ab466c067ca68e2162579d223524add" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:00:1D:78 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 3 <br> </li>                 </ul>                 </div>`)[0];
+                popup_47f77ab8210ddeb6ba5f65efecc75105.setContent(html_0ab466c067ca68e2162579d223524add);
+            
+        
+
+        circle_marker_04e198f0e62760055ff6855a89c10898.bindPopup(popup_47f77ab8210ddeb6ba5f65efecc75105)
+        ;
+
+        
+    
+    
+            var circle_marker_a619d87708cc17416b38e33ce4159b5b = L.circleMarker(
+                [51.39704514, 12.40223026],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_b08702cd7b026486dc2f6575fcb56130 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_999e11b4ac3b849a2160c9ec4de7dd46 = $(`<div id="html_999e11b4ac3b849a2160c9ec4de7dd46" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:02:32:B9 <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_b08702cd7b026486dc2f6575fcb56130.setContent(html_999e11b4ac3b849a2160c9ec4de7dd46);
+            
+        
+
+        circle_marker_a619d87708cc17416b38e33ce4159b5b.bindPopup(popup_b08702cd7b026486dc2f6575fcb56130)
+        ;
+
+        
+    
+    
+            var circle_marker_a943dc5bab6a8a7304f48ff5fcda2e4d = L.circleMarker(
+                [48.12598801, 11.35432053],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_8d726152f5a0835d526a18aacc4287b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5716e22ab502d342a2215b0a4b540bd = $(`<div id="html_f5716e22ab502d342a2215b0a4b540bd" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:07:5B:3A <br> </li>                     <li>Encryption: wpa <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_8d726152f5a0835d526a18aacc4287b6.setContent(html_f5716e22ab502d342a2215b0a4b540bd);
+            
+        
+
+        circle_marker_a943dc5bab6a8a7304f48ff5fcda2e4d.bindPopup(popup_8d726152f5a0835d526a18aacc4287b6)
+        ;
+
+        
+    
+    
+            var circle_marker_cb6c80d4c9ea4b701bc9f11caf6987f8 = L.circleMarker(
+                [50.57844925, 8.55956364],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_fd71bafe59a22f73e2083e3c12c94e80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2d2ae58cd7bbeb43af3622729705d2b = $(`<div id="html_a2d2ae58cd7bbeb43af3622729705d2b" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:16:D2:DB <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_fd71bafe59a22f73e2083e3c12c94e80.setContent(html_a2d2ae58cd7bbeb43af3622729705d2b);
+            
+        
+
+        circle_marker_cb6c80d4c9ea4b701bc9f11caf6987f8.bindPopup(popup_fd71bafe59a22f73e2083e3c12c94e80)
+        ;
+
+        
+    
+    
+            var circle_marker_f615dd35b45e9da606cf3c5c90433f5d = L.circleMarker(
+                [50.92459869, 6.9336772],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_d40c09edb04b74ea6bb321ac5d2cdd32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa35c291647fb3001fe8ca41108cd178 = $(`<div id="html_fa35c291647fb3001fe8ca41108cd178" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPAP</b> <br> </li>                     <li>MAC: 5E:CF:7F:1A:43:CA <br> </li>                     <li>Encryption: unknown <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_d40c09edb04b74ea6bb321ac5d2cdd32.setContent(html_fa35c291647fb3001fe8ca41108cd178);
+            
+        
+
+        circle_marker_f615dd35b45e9da606cf3c5c90433f5d.bindPopup(popup_d40c09edb04b74ea6bb321ac5d2cdd32)
+        ;
+
+        
+    
+    
+            var circle_marker_dddba252033508baa252ce2df3ed4c83 = L.circleMarker(
+                [49.71826172, 6.78292322],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_ee5796cff0c231a65a7b97fb5268ba40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b863e00689bf712c8d2c589f0e93b470 = $(`<div id="html_b863e00689bf712c8d2c589f0e93b470" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:93:9B:CD <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_ee5796cff0c231a65a7b97fb5268ba40.setContent(html_b863e00689bf712c8d2c589f0e93b470);
+            
+        
+
+        circle_marker_dddba252033508baa252ce2df3ed4c83.bindPopup(popup_ee5796cff0c231a65a7b97fb5268ba40)
+        ;
+
+        
+    
+    
+            var circle_marker_625a6f369af454138e3c1a42506e464a = L.circleMarker(
+                [50.90222168, 11.59654808],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_31034550d4b8c437e68d3e9f96f20408 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2160e1fcead2125fb12fa449e73677e = $(`<div id="html_f2160e1fcead2125fb12fa449e73677e" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:AE:92:BF <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_31034550d4b8c437e68d3e9f96f20408.setContent(html_f2160e1fcead2125fb12fa449e73677e);
+            
+        
+
+        circle_marker_625a6f369af454138e3c1a42506e464a.bindPopup(popup_31034550d4b8c437e68d3e9f96f20408)
+        ;
+
+        
+    
+    
+            var circle_marker_9dc49dfeddeee44ab07b2d9d1ca133db = L.circleMarker(
+                [51.39738464, 12.40007782],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_42d04297a094e4819bb4ffc4a96056f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54c24ad9646ef0d4199e2a3e9d3831c6 = $(`<div id="html_54c24ad9646ef0d4199e2a3e9d3831c6" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:D5:E1:E8 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_42d04297a094e4819bb4ffc4a96056f5.setContent(html_54c24ad9646ef0d4199e2a3e9d3831c6);
+            
+        
+
+        circle_marker_9dc49dfeddeee44ab07b2d9d1ca133db.bindPopup(popup_42d04297a094e4819bb4ffc4a96056f5)
+        ;
+
+        
+    
+    
+            var circle_marker_76c840e131b1c379750b469c9758ec10 = L.circleMarker(
+                [50.11271286, 8.6414938],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_a6412056bfec2dd44632ffb1620554d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bca1d4ba90ec4a3c392c19a0149ee90 = $(`<div id="html_6bca1d4ba90ec4a3c392c19a0149ee90" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 5E:CF:7F:D9:65:6C <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_a6412056bfec2dd44632ffb1620554d8.setContent(html_6bca1d4ba90ec4a3c392c19a0149ee90);
+            
+        
+
+        circle_marker_76c840e131b1c379750b469c9758ec10.bindPopup(popup_a6412056bfec2dd44632ffb1620554d8)
+        ;
+
+        
+    
+    
+            var circle_marker_6ff868bd04c9a91879402549ff76d082 = L.circleMarker(
+                [52.54946136, 13.42933273],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_174db1c123c12bd5233b8c8cd4a55e4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa65c2c97a7c602b0bd5d2b386193275 = $(`<div id="html_fa65c2c97a7c602b0bd5d2b386193275" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 62:01:94:05:D4:C2 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_174db1c123c12bd5233b8c8cd4a55e4a.setContent(html_fa65c2c97a7c602b0bd5d2b386193275);
+            
+        
+
+        circle_marker_6ff868bd04c9a91879402549ff76d082.bindPopup(popup_174db1c123c12bd5233b8c8cd4a55e4a)
+        ;
+
+        
+    
+    
+            var circle_marker_d4030aa48f52bf7f097a3c7407d6d6bf = L.circleMarker(
+                [50.93754959, 6.93349743],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_3ab9041c2ef896e96c763490be513f00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35b4aea47e92775cb1690746647a1803 = $(`<div id="html_35b4aea47e92775cb1690746647a1803" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 62:01:94:2B:C0:D5 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 4 <br> </li>                 </ul>                 </div>`)[0];
+                popup_3ab9041c2ef896e96c763490be513f00.setContent(html_35b4aea47e92775cb1690746647a1803);
+            
+        
+
+        circle_marker_d4030aa48f52bf7f097a3c7407d6d6bf.bindPopup(popup_3ab9041c2ef896e96c763490be513f00)
+        ;
+
+        
+    
+    
+            var circle_marker_d161531a8595c702c1a19f2d12095f1e = L.circleMarker(
+                [52.52839661, 13.46589851],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_ad95b2220fd27eed6d2f9d728227c4fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0616ef30f46d63e660ee94e72f3a0b5c = $(`<div id="html_0616ef30f46d63e660ee94e72f3a0b5c" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 6A:C6:3A:97:B5:0F <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 10 <br> </li>                 </ul>                 </div>`)[0];
+                popup_ad95b2220fd27eed6d2f9d728227c4fd.setContent(html_0616ef30f46d63e660ee94e72f3a0b5c);
+            
+        
+
+        circle_marker_d161531a8595c702c1a19f2d12095f1e.bindPopup(popup_ad95b2220fd27eed6d2f9d728227c4fd)
+        ;
+
+        
+    
+    
+            var circle_marker_f347c9e1b0314bea4a0a7765f9e1c78a = L.circleMarker(
+                [53.03230667, 13.30709553],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_e92175caecde1bfe2dc5bbea08710ed0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e899f940499bbbaebd74ef180140a5c2 = $(`<div id="html_e899f940499bbbaebd74ef180140a5c2" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 82:7D:3A:3E:7E:DA <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_e92175caecde1bfe2dc5bbea08710ed0.setContent(html_e899f940499bbbaebd74ef180140a5c2);
+            
+        
+
+        circle_marker_f347c9e1b0314bea4a0a7765f9e1c78a.bindPopup(popup_e92175caecde1bfe2dc5bbea08710ed0)
+        ;
+
+        
+    
+    
+            var circle_marker_22c04f82a6b1ea01f760107f8362190c = L.circleMarker(
+                [53.03255844, 13.30806446],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_aed1d50657011b95aa2029dbd67a283b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e202350e07f8fe8a550eddbc163d94db = $(`<div id="html_e202350e07f8fe8a550eddbc163d94db" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: 86:F3:EB:31:A7:1A <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_aed1d50657011b95aa2029dbd67a283b.setContent(html_e202350e07f8fe8a550eddbc163d94db);
+            
+        
+
+        circle_marker_22c04f82a6b1ea01f760107f8362190c.bindPopup(popup_aed1d50657011b95aa2029dbd67a283b)
+        ;
+
+        
+    
+    
+            var circle_marker_d8098edecbfba06953514494858cc692 = L.circleMarker(
+                [51.33245087, 12.33112431],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_b50d84c296fd9e1632f80c039d700fe4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad5bbb75313490b265d0dd0c9c78be94 = $(`<div id="html_ad5bbb75313490b265d0dd0c9c78be94" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: A2:20:A6:02:54:20 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_b50d84c296fd9e1632f80c039d700fe4.setContent(html_ad5bbb75313490b265d0dd0c9c78be94);
+            
+        
+
+        circle_marker_d8098edecbfba06953514494858cc692.bindPopup(popup_b50d84c296fd9e1632f80c039d700fe4)
+        ;
+
+        
+    
+    
+            var circle_marker_d87cb993966c382dbb49edd21abf3836 = L.circleMarker(
+                [49.40864944, 8.65716648],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_d82c8f5ad30357c1823a98984b6a7f47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d63d8a86531b3d868ee7a6f04d749a68 = $(`<div id="html_d63d8a86531b3d868ee7a6f04d749a68" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: A2:20:A6:04:F6:66 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_d82c8f5ad30357c1823a98984b6a7f47.setContent(html_d63d8a86531b3d868ee7a6f04d749a68);
+            
+        
+
+        circle_marker_d87cb993966c382dbb49edd21abf3836.bindPopup(popup_d82c8f5ad30357c1823a98984b6a7f47)
+        ;
+
+        
+    
+    
+            var circle_marker_b3ad64ddbfe99166bb5a06d4aff42a62 = L.circleMarker(
+                [50.10157776, 8.53107071],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_f302db1222543b671c5d800ed58330b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cbb83fc4d2eb871e4a1db4585853cfd = $(`<div id="html_5cbb83fc4d2eb871e4a1db4585853cfd" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: A2:20:A6:08:3C:75 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_f302db1222543b671c5d800ed58330b9.setContent(html_5cbb83fc4d2eb871e4a1db4585853cfd);
+            
+        
+
+        circle_marker_b3ad64ddbfe99166bb5a06d4aff42a62.bindPopup(popup_f302db1222543b671c5d800ed58330b9)
+        ;
+
+        
+    
+    
+            var circle_marker_1212d453845741017d2a4b07be3551dc = L.circleMarker(
+                [48.62890625, 9.04361153],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_08356dd2f538a0c082906c1b0b64aed4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f244247d6621e255d930eaf092c79e6 = $(`<div id="html_3f244247d6621e255d930eaf092c79e6" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: A2:20:A6:12:29:E6 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 11 <br> </li>                 </ul>                 </div>`)[0];
+                popup_08356dd2f538a0c082906c1b0b64aed4.setContent(html_3f244247d6621e255d930eaf092c79e6);
+            
+        
+
+        circle_marker_1212d453845741017d2a4b07be3551dc.bindPopup(popup_08356dd2f538a0c082906c1b0b64aed4)
+        ;
+
+        
+    
+    
+            var circle_marker_98185254d86c0afce8c06536f40e7eed = L.circleMarker(
+                [50.96092606, 6.92522097],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_3b559ca12a37fe4e01104ceda1c8871f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fe598c792fd4c26919fcaabefc6d782 = $(`<div id="html_7fe598c792fd4c26919fcaabefc6d782" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: A2:20:A6:12:3C:45 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 9 <br> </li>                 </ul>                 </div>`)[0];
+                popup_3b559ca12a37fe4e01104ceda1c8871f.setContent(html_7fe598c792fd4c26919fcaabefc6d782);
+            
+        
+
+        circle_marker_98185254d86c0afce8c06536f40e7eed.bindPopup(popup_3b559ca12a37fe4e01104ceda1c8871f)
+        ;
+
+        
+    
+    
+            var circle_marker_cf26f4ab7b31f1a64779d66e3e03a170 = L.circleMarker(
+                [51.0342865, 13.72142792],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_cdf8ff4f232c7e6d840a99a08178aca8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2956d3154b5d9b122e9880fea6e2b94 = $(`<div id="html_c2956d3154b5d9b122e9880fea6e2b94" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPAP</b> <br> </li>                     <li>MAC: A2:20:A6:12:56:1C <br> </li>                     <li>Encryption: unknown <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_cdf8ff4f232c7e6d840a99a08178aca8.setContent(html_c2956d3154b5d9b122e9880fea6e2b94);
+            
+        
+
+        circle_marker_cf26f4ab7b31f1a64779d66e3e03a170.bindPopup(popup_cdf8ff4f232c7e6d840a99a08178aca8)
+        ;
+
+        
+    
+    
+            var circle_marker_bac45e5606ffbd52e91384211c76eeea = L.circleMarker(
+                [48.3598671, 10.89784813],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_6fa6b0166fbf084263839249aa081e82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_405a5236e8e87dd58d696c7111637b21 = $(`<div id="html_405a5236e8e87dd58d696c7111637b21" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: A2:20:A6:1B:91:0F <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 6 <br> </li>                 </ul>                 </div>`)[0];
+                popup_6fa6b0166fbf084263839249aa081e82.setContent(html_405a5236e8e87dd58d696c7111637b21);
+            
+        
+
+        circle_marker_bac45e5606ffbd52e91384211c76eeea.bindPopup(popup_6fa6b0166fbf084263839249aa081e82)
+        ;
+
+        
+    
+    
+            var circle_marker_fec00412953b6d52db331bdffeac300e = L.circleMarker(
+                [49.47695923, 8.48276615],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_9c7a1fd67d8d9d7971c4d616d7bc79de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_031315221b22bd6370ae983ed80a97bf = $(`<div id="html_031315221b22bd6370ae983ed80a97bf" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>ESPap</b> <br> </li>                     <li>MAC: CE:50:E3:CE:14:25 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_9c7a1fd67d8d9d7971c4d616d7bc79de.setContent(html_031315221b22bd6370ae983ed80a97bf);
+            
+        
+
+        circle_marker_fec00412953b6d52db331bdffeac300e.bindPopup(popup_9c7a1fd67d8d9d7971c4d616d7bc79de)
+        ;
+
+        
+    
+    
+            var circle_marker_ae17bef0c7ecaba2c2aab1d7164a12ac = L.circleMarker(
+                [49.86526871, 8.64533329],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 15, "stroke": true, "weight": 1}
+            ).addTo(marker_cluster_78b2679be52e18e1a747dd421be4900f);
+        
+    
+        var popup_5f3085da532cc11bd750beb677d5e8bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1521f0f3c790496b86667d50e7acb868 = $(`<div id="html_1521f0f3c790496b86667d50e7acb868" style="width: 100.0%; height: 100.0%;">                 From MAC: <b>9a:7b:60:85:e8:60</b> <br>                 <ul>                     <li>SSID: <b>www.bieberlan.de</b> <br> </li>                     <li>MAC: D0:65:CA:8A:6D:C4 <br> </li>                     <li>Encryption: wpa2 <br> </li>                     <li>Channel: 1 <br> </li>                 </ul>                 </div>`)[0];
+                popup_5f3085da532cc11bd750beb677d5e8bc.setContent(html_1521f0f3c790496b86667d50e7acb868);
+            
+        
+
+        circle_marker_ae17bef0c7ecaba2c2aab1d7164a12ac.bindPopup(popup_5f3085da532cc11bd750beb677d5e8bc)
+        ;
+
+        
+    
+</script>
+</html>

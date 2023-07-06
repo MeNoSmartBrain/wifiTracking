@@ -1,5 +1,388 @@
-1686348155.8893764;21:09:81:b1:ab:cf;Unknown OUI;UPC9476371
-1686348156.8913813;13:10:95:d2:9b:eb;Unknown OUI;GetYourOwn
-1686348157.8951418;da:c8:8e:e8:92:08;Unknown OUI;visitors
-1686348157.8951418;de:ad:be:ef:92:08;Unknown OUI;WiFionICE
-1686348157.8951418;00:00:00:00:00:00;Unknown OUI;eduroam
+1688637955.6841717;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688637960.2180414;c0:8c:71:a4:28:8c;Motorola Mobility LLC, a Lenovo Company;eduroam
+1688637960.2335143;c0:8c:71:a4:28:8c;Motorola Mobility LLC, a Lenovo Company;eduroam
+1688637961.0224452;06:e8:1e:ea:7e:7b;Unknown OUI;eduroam
+1688637961.0424452;06:e8:1e:ea:7e:7b;Unknown OUI;eduroam
+1688637961.0830686;06:e8:1e:ea:7e:7b;Unknown OUI;eduroam
+1688637974.2649305;52:65:22:98:75:32;Unknown OUI;eduroam
+1688637974.2852323;52:65:22:98:75:32;Unknown OUI;eduroam
+1688637974.6131854;52:65:22:98:75:32;Unknown OUI;eduroam
+1688637975.1498756;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688637975.1704648;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688637976.5332243;da:a1:19:6d:90:3a;Unknown OUI;devolo_n1
+1688637977.133774;52:65:22:98:75:32;Unknown OUI;eduroam
+1688637979.2383268;52:65:22:98:75:32;Unknown OUI;eduroam
+1688637980.1041062;52:65:22:98:75:32;Unknown OUI;eduroam
+1688637980.6377065;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688637980.657731;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688637982.9673188;82:c2:85:66:19:c6;Unknown OUI;eduroam
+1688637983.6652477;a4:4b:d5:1a:47:c1;Xiaomi Communications Co Ltd;eduroam
+1688637984.241243;9a:bb:84:fe:f6:20;Unknown OUI;PW - TEAM 1
+1688637984.296245;9a:bb:84:fe:f6:20;Unknown OUI;PW - TEAM 1
+1688637985.3029613;c0:8c:71:cb:cd:40;Motorola Mobility LLC, a Lenovo Company;eduroam
+1688637985.646766;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688637986.1652572;96:87:56:f2:3b:63;Unknown OUI;eduroam
+1688637986.416467;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688637987.860645;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688637988.552814;1a:44:fe:96:61:7b;Unknown OUI;eduroam
+1688638001.4681642;a4:4b:d5:1a:47:c1;Xiaomi Communications Co Ltd;eduroam
+1688638001.4887755;a4:4b:d5:1a:47:c1;Xiaomi Communications Co Ltd;eduroam
+1688638003.6429586;a4:4b:d5:1a:47:c1;Xiaomi Communications Co Ltd;eduroam
+1688638004.2047102;a4:4b:d5:bc:c3:d4;Xiaomi Communications Co Ltd;eduroam
+1688638004.205136;a4:4b:d5:bc:c3:d4;Xiaomi Communications Co Ltd;eduroam
+1688638005.1114638;3e:06:37:e2:31:93;Unknown OUI;eduroam
+1688638005.1135921;a4:4b:d5:1a:47:c1;Xiaomi Communications Co Ltd;eduroam
+1688638012.752223;3e:06:37:e2:31:93;Unknown OUI;eduroam
+1688638017.1223123;3e:06:37:e2:31:93;Unknown OUI;eduroam
+1688638017.1432831;3e:06:37:e2:31:93;Unknown OUI;eduroam
+1688638017.8249526;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638017.8454988;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638018.1296997;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638019.034491;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638020.3647232;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638023.7985923;06:e8:1e:ea:7e:7b;Unknown OUI;eduroam
+1688638023.821538;06:e8:1e:ea:7e:7b;Unknown OUI;eduroam
+1688638023.8750305;06:e8:1e:ea:7e:7b;Unknown OUI;eduroam
+1688638033.2883182;62:4b:f8:66:1a:d3;Unknown OUI;eduroam
+1688638033.2891436;62:4b:f8:66:1a:d3;Unknown OUI;eduroam
+1688638033.3087451;62:4b:f8:66:1a:d3;Unknown OUI;eduroam
+1688638033.4410973;ba:8f:18:a3:15:26;Unknown OUI;eduroam
+1688638033.4621503;ba:8f:18:a3:15:26;Unknown OUI;eduroam
+1688638035.6856637;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638035.7056224;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638035.7304447;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638036.7816722;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638036.786515;ba:8f:18:a3:15:26;Unknown OUI;eduroam
+1688638036.80161;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638036.8080406;ba:8f:18:a3:15:26;Unknown OUI;eduroam
+1688638036.9165664;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638036.9364998;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638047.0303092;f6:eb:21:7c:33:9a;Unknown OUI;eduroam
+1688638051.3304298;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638051.4507258;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638052.0104067;4e:23:3e:60:94:cf;Unknown OUI;eduroam
+1688638052.5756404;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688638053.266393;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688638056.0992846;22:35:a6:01:b1:6f;Unknown OUI;advanced_systems
+1688638056.1157167;22:35:a6:01:b1:6f;Unknown OUI;advanced_systems
+1688638064.9010937;62:4b:f8:66:1a:d3;Unknown OUI;eduroam
+1688638064.920342;62:4b:f8:66:1a:d3;Unknown OUI;eduroam
+1688638073.8083045;7e:2b:e4:92:e2:d9;Unknown OUI;eduroam
+1688638073.828325;7e:2b:e4:92:e2:d9;Unknown OUI;eduroam
+1688638075.6608632;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638075.6938791;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638079.3076437;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638079.3280356;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638079.4026296;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638079.429712;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638082.8364482;62:4b:f8:66:1a:d3;Unknown OUI;eduroam
+1688638082.837722;62:4b:f8:66:1a:d3;Unknown OUI;eduroam
+1688638086.406215;4e:23:3e:60:94:cf;Unknown OUI;eduroam
+1688638086.4256496;4e:23:3e:60:94:cf;Unknown OUI;eduroam
+1688638086.4498706;4e:23:3e:60:94:cf;Unknown OUI;eduroam
+1688638090.72836;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688638090.7833757;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688638091.794442;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638091.8396592;78:af:08:f9:a3:7b;Unknown OUI;eduroam
+1688638091.9092019;78:af:08:f9:a3:7b;Unknown OUI;eduroam
+1688638099.3729882;02:29:7e:eb:82:dd;Unknown OUI;UBNT
+1688638099.5262403;02:29:7e:eb:82:dd;Unknown OUI;WLAN@RMV
+1688638106.926346;f2:b2:24:1d:2b:53;Unknown OUI;eduroam
+1688638106.9957964;f2:b2:24:1d:2b:53;Unknown OUI;eduroam
+1688638115.44671;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688638121.301903;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638121.321845;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638122.717605;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638125.6957576;aa:8a:75:bd:a4:8a;Unknown OUI;eduroam
+1688638125.7023711;aa:8a:75:bd:a4:8a;Unknown OUI;eduroam
+1688638125.7229736;aa:8a:75:bd:a4:8a;Unknown OUI;eduroam
+1688638126.0124698;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638126.032582;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638126.7687595;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638127.3886786;7e:2b:e4:92:e2:d9;Unknown OUI;eduroam
+1688638127.4324658;7e:2b:e4:92:e2:d9;Unknown OUI;eduroam
+1688638128.2963817;f2:b2:24:1d:2b:53;Unknown OUI;eduroam
+1688638129.977712;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638134.0135062;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638134.0338328;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638134.0825016;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638134.1027567;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638135.9499204;4e:23:3e:60:94:cf;Unknown OUI;eduroam
+1688638140.8797174;80:b6:55:83:0e:d2;Unknown OUI;eduroam
+1688638148.4212143;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638153.0685134;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688638153.0862782;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688638156.8550136;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638157.997881;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638158.0183687;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638161.0146282;52:2e:d0:37:12:cc;Unknown OUI;FRITZ!Box 7590 IT
+1688638162.8373177;aa:4e:28:b7:fa:56;Unknown OUI;Scheune
+1688638163.5692503;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688638165.4024558;a4:4b:d5:1a:47:c1;Xiaomi Communications Co Ltd;eduroam
+1688638199.301383;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638200.7019243;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688638200.721919;4a:e2:70:b4:cc:00;Unknown OUI;eduroam
+1688638205.112136;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638210.7129765;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638214.7781286;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638214.823339;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638215.7730656;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638216.03983;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638216.0608628;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638216.2783208;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638216.3226006;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638216.3427818;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638216.6827054;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638216.7028315;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638217.1564631;12:65:2f:c9:89:bf;Unknown OUI;eduroam
+1688638221.303134;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638223.518497;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638225.4854646;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638225.5024223;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638225.505663;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638225.5228293;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638225.64445;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638225.6645565;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638231.9105241;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638246.5775788;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638248.9253292;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638250.6543572;22:04:48:48:44:a8;Unknown OUI;eduroam
+1688638255.9915159;82:e1:75:aa:e3:82;Unknown OUI;eduroam
+1688638258.7614727;1a:44:fe:96:61:7b;Unknown OUI;eduroam
+1688638258.7717638;1a:44:fe:96:61:7b;Unknown OUI;eduroam
+1688638259.1434388;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688638259.1637893;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688638259.2668216;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688638259.3226883;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688638259.3532982;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688638259.399596;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688638260.4510825;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638260.4718037;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638260.6096745;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638261.7532244;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638264.5304134;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638265.2979054;82:e1:75:aa:e3:82;Unknown OUI;eduroam
+1688638269.7586596;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638269.8011038;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638269.986564;6e:e1:e2:19:8b:88;Unknown OUI;eduroam
+1688638270.0150626;6e:e1:e2:19:8b:88;Unknown OUI;eduroam
+1688638271.3196127;f4:7b:09:5f:16:7b;Unknown OUI;eduroam
+1688638272.2819817;82:31:23:f1:07:b8;Unknown OUI;eduroam
+1688638272.2939453;82:31:23:f1:07:b8;Unknown OUI;eduroam
+1688638273.1506255;82:31:23:f1:07:b8;Unknown OUI;eduroam
+1688638274.789795;6e:e1:e2:19:8b:88;Unknown OUI;eduroam
+1688638274.8060024;6e:e1:e2:19:8b:88;Unknown OUI;eduroam
+1688638274.8220382;6e:e1:e2:19:8b:88;Unknown OUI;eduroam
+1688638276.678654;0e:fb:30:26:d1:0e;Unknown OUI;eduroam
+1688638284.3235643;6c:7e:67:c2:7a:30;Unknown OUI;eduroam
+1688638290.5466194;6c:7e:67:c2:7a:30;Unknown OUI;eduroam
+1688638294.1883755;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638294.2086883;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638296.4608545;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638296.58366;8e:77:23:33:62:6d;Unknown OUI;TP-Link_A1EF_5G
+1688638296.6040566;8e:77:23:33:62:6d;Unknown OUI;TP-Link_A1EF_5G
+1688638296.928961;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638296.9493346;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638296.9961996;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638297.0166013;ee:48:ef:0b:46:8a;Unknown OUI;WiFi-AGVogel
+1688638297.2854488;66:dc:e2:5f:d8:7e;Unknown OUI;advanced_systems
+1688638297.3080425;66:dc:e2:5f:d8:7e;Unknown OUI;advanced_systems
+1688638305.8708184;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638305.9667652;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638305.9870784;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638306.5370793;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638306.557317;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638306.8523948;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638306.9421387;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638306.962393;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688638312.1015592;5e:fb:88:0f:df:34;Unknown OUI;eduroam
+1688638313.9923904;b8:31:b5:8a:7b:9d;Microsoft Corporation;eduroam
+1688638313.9933221;b8:31:b5:8a:7b:9d;Microsoft Corporation;eduroam
+1688638316.0347998;80:b6:55:83:0e:d2;Unknown OUI;eduroam
+1688638341.0559742;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638343.8392785;5c:c5:d4:63:e5:66;Intel Corporate;eduroam
+1688638352.0461943;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688638358.809942;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638360.1086967;88:46:04:64:33:71;Unknown OUI;eduroam
+1688638361.1617718;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638361.1781704;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638361.194493;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638363.1295006;70:a8:d3:df:6a:7e;Unknown OUI;eduroam
+1688638366.9185903;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638370.1136267;92:9a:d4:33:5b:f8;Unknown OUI;eduroam
+1688638373.4438431;e2:a4:ed:37:03:4b;Unknown OUI;eduroam
+1688638374.9194865;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638375.768039;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638375.7840762;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638381.4085143;7e:cb:bd:71:3e:b5;Unknown OUI;eduroam
+1688638381.438593;7e:cb:bd:71:3e:b5;Unknown OUI;eduroam
+1688638385.972823;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638385.9887896;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638386.0049758;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638390.9856951;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638391.0019376;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638391.01823;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638395.8204896;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638395.902496;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638395.9226444;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638396.0420065;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638396.0545805;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688638400.747419;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638400.7625573;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638400.7778862;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638408.4475641;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638408.4825265;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638410.7885754;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638410.8041406;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638410.9893098;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638411.467276;62:67:2a:7a:51:24;Unknown OUI;eduroam
+1688638411.4876704;62:67:2a:7a:51:24;Unknown OUI;eduroam
+1688638415.4965558;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638416.0512302;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638423.603284;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638425.4201648;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638429.7253885;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638432.6582005;92:99:33:d9:2f:1b;Unknown OUI;eduroam
+1688638438.1244366;3a:d1:4c:7c:46:f8;Unknown OUI;eduroam
+1688638438.1456547;3a:d1:4c:7c:46:f8;Unknown OUI;eduroam
+1688638452.4037464;3a:d1:4c:7c:46:f8;Unknown OUI;eduroam
+1688638452.5564141;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638452.5776393;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638452.5950077;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638452.615586;2e:e3:d6:31:69:0a;Unknown OUI;eduroam
+1688638455.9457455;00:06:78:87:3e:2a;D&M Holdings Inc.;FingerwegvonunsermWLAN
+1688638461.2192347;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688638461.239891;ea:92:43:01:08:3e;Unknown OUI;eduroam
+1688640015.9955194;86:e8:36:3a:79:51;Unknown OUI;trp-badge
+1688640016.0180984;86:e8:36:3a:79:51;Unknown OUI;trp-badge
+1688640017.9876933;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688640018.0078616;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688640018.1678376;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688640018.188039;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688640019.61882;e6:0c:ad:6d:e0:aa;Unknown OUI;trp-badge
+1688640019.6393342;e6:0c:ad:6d:e0:aa;Unknown OUI;trp-badge
+1688640020.0804799;aa:47:a5:1b:e2:22;Unknown OUI;trp-badge
+1688640020.1004565;aa:47:a5:1b:e2:22;Unknown OUI;trp-badge
+1688640030.4732087;d2:1a:c0:3b:39:ed;Unknown OUI;STS
+1688640030.4974213;d2:1a:c0:3b:39:ed;Unknown OUI;STS
+1688640030.6436563;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640030.6639493;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640030.697902;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640030.704721;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640034.0412264;1e:8f:30:a4:c5:6f;Unknown OUI;STS
+1688640034.0616236;1e:8f:30:a4:c5:6f;Unknown OUI;STS
+1688640036.3283064;6e:65:1e:9f:b9:01;Unknown OUI;STS
+1688640036.348373;6e:65:1e:9f:b9:01;Unknown OUI;STS
+1688640038.4862201;d2:1a:c0:3b:39:ed;Unknown OUI;STS
+1688640038.516183;d2:1a:c0:3b:39:ed;Unknown OUI;STS
+1688640057.2070932;02:fc:73:6e:de:a0;Unknown OUI;PW - TEAM 1
+1688640057.2874992;02:fc:73:6e:de:a0;Unknown OUI;PW - TEAM 1
+1688640064.3001804;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640064.3202133;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640064.3405268;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640064.3607683;c8:2a:dd:ae:20:4c;Unknown OUI;eduroam
+1688640064.5328403;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640064.547919;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640064.6239543;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640064.7069836;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640064.7223868;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640064.7366621;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640064.8001788;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640064.8299787;c8:34:8e:1a:a7:2a;Intel Corporate;eduroam
+1688640091.0167015;9a:b5:52:3a:86:a8;Unknown OUI;LAN-Party
+1688640091.0177753;9a:b5:52:3a:86:a8;Unknown OUI;darmstadt.freifunk.net
+1688640091.0188365;9a:b5:52:3a:86:a8;Unknown OUI;FRITZ!Box 7490
+1688640091.0198834;9a:b5:52:3a:86:a8;Unknown OUI;@joostcore
+1688640091.0208962;9a:b5:52:3a:86:a8;Unknown OUI;WIFI@DB
+1688640091.0219448;9a:b5:52:3a:86:a8;Unknown OUI;WIFIonICE
+1688640091.0230227;9a:b5:52:3a:86:a8;Unknown OUI;www.bieberlan.de
+1688640091.0240533;9a:b5:52:3a:86:a8;Unknown OUI;ESPap
+1688640091.0250678;9a:b5:52:3a:86:a8;Unknown OUI;feldmann
+1688640091.0350251;9a:b5:52:3a:86:a8;Unknown OUI;darmstadt.freifunk.net
+1688640091.0361202;9a:b5:52:3a:86:a8;Unknown OUI;FRITZ!Box 7490
+1688640091.0371413;9a:b5:52:3a:86:a8;Unknown OUI;@joostcore
+1688640091.1107419;9a:b5:52:3a:86:a8;Unknown OUI;darmstadt.freifunk.net
+1688640091.1117508;9a:b5:52:3a:86:a8;Unknown OUI;FRITZ!Box 7490
+1688640091.1127906;9a:b5:52:3a:86:a8;Unknown OUI;@joostcore
+1688640091.114851;9a:b5:52:3a:86:a8;Unknown OUI;WIFIonICE
+1688640091.1159527;9a:b5:52:3a:86:a8;Unknown OUI;www.bieberlan.de
+1688640091.1169765;9a:b5:52:3a:86:a8;Unknown OUI;ESPap
+1688640091.117973;9a:b5:52:3a:86:a8;Unknown OUI;feldmann
+1688640091.1203337;9a:b5:52:3a:86:a8;Unknown OUI;LAN-Party
+1688640091.1226912;9a:b5:52:3a:86:a8;Unknown OUI;FRITZ!Box 7490
+1688640091.125941;9a:b5:52:3a:86:a8;Unknown OUI;WIFIonICE
+1688640091.1270478;9a:b5:52:3a:86:a8;Unknown OUI;www.bieberlan.de
+1688640091.1280646;9a:b5:52:3a:86:a8;Unknown OUI;ESPap
+1688640091.1493042;9a:b5:52:3a:86:a8;Unknown OUI;feldmann
+1688640100.2711048;9a:7b:60:85:e8:60;Unknown OUI;LAN-Party
+1688640100.2719765;9a:7b:60:85:e8:60;Unknown OUI;darmstadt.freifunk.net
+1688640100.2730682;9a:7b:60:85:e8:60;Unknown OUI;FRITZ!Box 7490
+1688640100.274377;9a:7b:60:85:e8:60;Unknown OUI;@joostcore
+1688640100.2753983;9a:7b:60:85:e8:60;Unknown OUI;WIFI@DB
+1688640100.2765703;9a:7b:60:85:e8:60;Unknown OUI;WIFIonICE
+1688640100.2777712;9a:7b:60:85:e8:60;Unknown OUI;www.bieberlan.de
+1688640100.2789783;9a:7b:60:85:e8:60;Unknown OUI;ESPap
+1688640100.280181;9a:7b:60:85:e8:60;Unknown OUI;feldmann
+1688640100.2909503;9a:7b:60:85:e8:60;Unknown OUI;LAN-Party
+1688640100.2923193;9a:7b:60:85:e8:60;Unknown OUI;darmstadt.freifunk.net
+1688640100.293713;9a:7b:60:85:e8:60;Unknown OUI;FRITZ!Box 7490
+1688640100.2948968;9a:7b:60:85:e8:60;Unknown OUI;@joostcore
+1688640100.2961795;9a:7b:60:85:e8:60;Unknown OUI;WIFI@DB
+1688640100.2973871;9a:7b:60:85:e8:60;Unknown OUI;WIFIonICE
+1688640100.298656;9a:7b:60:85:e8:60;Unknown OUI;www.bieberlan.de
+1688640100.2998412;9a:7b:60:85:e8:60;Unknown OUI;ESPap
+1688640100.3009882;9a:7b:60:85:e8:60;Unknown OUI;feldmann
+1688640100.428515;9a:7b:60:85:e8:60;Unknown OUI;LAN-Party
+1688640100.4294133;9a:7b:60:85:e8:60;Unknown OUI;darmstadt.freifunk.net
+1688640100.43059;9a:7b:60:85:e8:60;Unknown OUI;FRITZ!Box 7490
+1688640100.431897;9a:7b:60:85:e8:60;Unknown OUI;@joostcore
+1688640100.4331517;9a:7b:60:85:e8:60;Unknown OUI;WIFI@DB
+1688640100.4344347;9a:7b:60:85:e8:60;Unknown OUI;WIFIonICE
+1688640100.4356132;9a:7b:60:85:e8:60;Unknown OUI;www.bieberlan.de
+1688640100.4366572;9a:7b:60:85:e8:60;Unknown OUI;ESPap
+1688640100.45321;9a:7b:60:85:e8:60;Unknown OUI;LAN-Party
+1688640100.4543798;9a:7b:60:85:e8:60;Unknown OUI;darmstadt.freifunk.net
+1688640100.4555445;9a:7b:60:85:e8:60;Unknown OUI;FRITZ!Box 7490
+1688640100.4567056;9a:7b:60:85:e8:60;Unknown OUI;@joostcore
+1688640100.4578137;9a:7b:60:85:e8:60;Unknown OUI;WIFI@DB
+1688640100.4589653;9a:7b:60:85:e8:60;Unknown OUI;WIFIonICE
+1688640100.460178;9a:7b:60:85:e8:60;Unknown OUI;www.bieberlan.de
+1688640100.4614267;9a:7b:60:85:e8:60;Unknown OUI;ESPap
+1688640100.5113401;9a:7b:60:85:e8:60;Unknown OUI;www.bieberlan.de
+1688640107.487175;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688640107.5073128;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688640107.5332582;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688640107.556367;be:84:7f:70:7d:88;Unknown OUI;eduroam
+1688640107.964911;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688640107.9861388;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688640108.2224689;ba:5d:55:16:f3:e4;Unknown OUI;eduroam
+1688640131.107835;1e:07:b9:7a:13:81;Unknown OUI;LAN-Party
+1688640131.108924;1e:07:b9:7a:13:81;Unknown OUI;darmstadt.freifunk.net
+1688640131.109958;1e:07:b9:7a:13:81;Unknown OUI;eduroam
+1688640131.1110213;1e:07:b9:7a:13:81;Unknown OUI;FRITZ!Box 7490
+1688640131.1123114;1e:07:b9:7a:13:81;Unknown OUI;WIFI@DB
+1688640131.113308;1e:07:b9:7a:13:81;Unknown OUI;WIFIonICE
+1688640131.1144571;1e:07:b9:7a:13:81;Unknown OUI;www.bieberlan.de
+1688640131.1154373;1e:07:b9:7a:13:81;Unknown OUI;ESPap
+1688640131.1164322;1e:07:b9:7a:13:81;Unknown OUI;feldmann
+1688640131.1199155;1e:07:b9:7a:13:81;Unknown OUI;darmstadt.freifunk.net
+1688640131.120958;1e:07:b9:7a:13:81;Unknown OUI;eduroam
+1688640131.1264522;1e:07:b9:7a:13:81;Unknown OUI;FRITZ!Box 7490
+1688640131.127414;1e:07:b9:7a:13:81;Unknown OUI;WIFI@DB
+1688640131.2363749;e2:eb:6a:39:ea:27;Unknown OUI;WIFI@DB
+1688640131.2374413;e2:eb:6a:39:ea:27;Unknown OUI;WIFIonICE
+1688640131.2385442;e2:eb:6a:39:ea:27;Unknown OUI;www.bieberlan.de
+1688640131.2395525;e2:eb:6a:39:ea:27;Unknown OUI;ESPap
+1688640131.2405736;e2:eb:6a:39:ea:27;Unknown OUI;feldmann
+1688640131.2426114;e2:eb:6a:39:ea:27;Unknown OUI;LAN-Party
+1688640131.2448559;e2:eb:6a:39:ea:27;Unknown OUI;eduroam
+1688640131.2459407;e2:eb:6a:39:ea:27;Unknown OUI;FRITZ!Box 7490
+1688640131.2469547;e2:eb:6a:39:ea:27;Unknown OUI;WIFI@DB
+1688640131.2479916;e2:eb:6a:39:ea:27;Unknown OUI;WIFIonICE
+1688640131.2811975;e2:eb:6a:39:ea:27;Unknown OUI;feldmann
+1688640134.5985081;02:b0:b6:b7:bf:fc;Unknown OUI;eduroam
+1688640134.6518638;02:b0:b6:b7:bf:fc;Unknown OUI;eduroam
+1688640134.728373;a4:83:e7:74:23:de;Apple, Inc.;eduroam
+1688640134.735825;a4:83:e7:74:23:de;Apple, Inc.;eduroam
+1688640134.7549329;a4:83:e7:74:23:de;Apple, Inc.;eduroam
+1688640134.7652886;a4:83:e7:74:23:de;Apple, Inc.;eduroam
