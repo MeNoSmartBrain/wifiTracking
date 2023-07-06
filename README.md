@@ -106,6 +106,6 @@ The demoMaps folder contains the generated maps and screenshots from artificial 
 There are code snippets that are inspired by ChatGPT. The unaltered code from ChatGPT can be found in the file "chatGPT.md". Code snippets taken or inspired by ChatGPT are marked in the Jupyter Notebook. These code snippets are not my own creation and should not be considered for grading purposes. 
 I have used these code snippets to enhance the visualization of the data. They are not needed for the core functionality of the project.
 
-In the test.py file you can find code snippets. There are intended to be used to use the clustering capabilities of folium. However, they are not used in the final implementation. I may implement them in a future version of this project, but the code mainly consists of writing JavaScript, CSS and HTML. Furthermore it doesn't directly influence the stated goal of this project. Since my time is limited, I decided to not implement it in the current version.
+In the .test.py file you can find code snippets. There are intended to be used to use the clustering capabilities of folium. However, they are not used in the final implementation. I may implement them in a future version of this project, but the code mainly consists of writing JavaScript, CSS and HTML. Furthermore it doesn't directly influence the stated goal of this project. Since my time is limited, I decided to not implement it in the current version.
 
 Therefore this file can be ignored for the grading process.
